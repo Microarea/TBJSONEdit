@@ -1,183 +1,224 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="/tile-layout.css">
-        <link rel="stylesheet" href="js/flex-checkable-tree-view/dist/flex-tree.min.css">
-    </head>
-    <body>
-        <style> 
-            #page-header {
-                display: flex;
-                flex-direction: row;
-                margin: 0.5rem 0 0.5rem 1rem;
-            }
-            #content-wrapper {
-                display: flex;
-                flex-direction: row;
-            }
-            #main-content{
-                width: 70%;
-                display: flex;
-                flex-direction: column;
-            }
-            #side-bar {
-                width: 27%;
-                display: flex;
-                flex-direction: column;
-            }
-            .side-panel{
-                min-height: 3rem;
-                padding: 0 1rem;
-                margin: 0 0.5rem 0.5rem 0.5rem;
-                border: 1px solid lightgrey;
-                border-radius: 0.5rem;
-                box-sizing: border-box;
-            }
-            .side-panel-title{
-                height: 3rem;
-                font-weight: bold;
-            }
-            .side-panel-content{
-                /* height: 70%; */
-            }
-            .side-panel-bottom{
-                height: 2.5rem;
-                margin-top: 0.5rem;
-                border-top: #f0f0f0 1px solid;
-                padding-top: 0.5rem;
-            }
-            .property-row {
-                display: flex;
-                flex-direction: row;
-                margin-top: 0.5rem;
-            }
-            .property-name {
-                width: 30%;
-            }
-            .property-value {
-                width: 70%;
-            }
-            .property-value input {
-                width: 100%;
-            }
-            .property-value input[type=checkbox] {
-                width: unset;
-            }
-            .property-group {
-                display: flex;
-                flex-direction: column;
-            }
-            .property-group hr {
-                width: 100%;
-            }
-            .property-group-name {
-                font-style: italic;
-                width: 30%;
-            }
-            .property-managed {
-                font-weight: bold;
-            }
-            .ml-1 {
-                margin-left: 1rem;
-            }
-            .flex-tree {
-                padding-inline-start: 0.5rem;
-            }
-            .flex-tree ul {
-                padding-inline-start: 2rem;
-            }
-            .selected-tree-element {
-                background-color: #f0f0f0;
-            }
-        </style>
-        <div id="page-header">
-            <button onclick="window.location='home.html'">Back</button>
-            <button onclick="JSONEdit.save(event)">Save</button>
-            <p id="message"></p>
+
+<head>
+    <link rel="stylesheet" href="/tile-layout.css">
+    <link rel="stylesheet" href="js/flex-checkable-tree-view/dist/flex-tree.min.css">
+    <link rel="stylesheet" href="./w3.css">
+</head>
+
+<body>
+    <style>
+        #page-header {
+            display: flex;
+            flex-direction: row;
+            margin: 0.5rem 0 0.5rem 1rem;
+        }
+        
+        #content-wrapper {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #main-content {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #side-bar {
+            width: 27%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .side-panel {
+            min-height: 3rem;
+            padding: 0 1rem;
+            margin: 0 0.5rem 0.5rem 0.5rem;
+            border: 1px solid lightgrey;
+            border-radius: 0.5rem;
+            box-sizing: border-box;
+        }
+        
+        .side-panel-title {
+            height: 3rem;
+            font-weight: bold;
+            font-size: 21px;
+        }
+        
+        .side-panel-content {
+            /* height: 70%; */
+        }
+        
+        .side-panel-bottom {
+            height: 2.5rem;
+            margin-top: 0.5rem;
+            border-top: #f0f0f0 1px solid;
+            padding-top: 0.5rem;
+        }
+        
+        .property-row {
+            display: flex;
+            flex-direction: row;
+            margin-top: 0.5rem;
+        }
+        
+        .property-name {
+            width: 30%;
+        }
+        
+        .property-value {
+            width: 70%;
+        }
+        
+        .property-value input {
+            width: 100%;
+        }
+        
+        .property-value input[type=checkbox] {
+            width: unset;
+        }
+        
+        .property-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .property-group hr {
+            width: 100%;
+        }
+        
+        .property-group-name {
+            font-style: italic;
+            width: 30%;
+        }
+        
+        .property-managed {
+            font-weight: bold;
+        }
+        
+        .ml-1 {
+            margin-left: 1rem;
+        }
+        
+        .flex-tree {
+            padding-inline-start: 0.5rem;
+        }
+        
+        .flex-tree ul {
+            padding-inline-start: 2rem;
+        }
+        
+        .selected-tree-element {
+            background-color: #f0f0f0;
+        }
+    </style>
+    <div class="w3-container w3-teal">
+        <center>
+            <h2>JSON editor</h2>
+        </center>
+    </div>
+
+    <div id="page-header">
+        <button onclick="window.location='home.html'">Back</button>
+        <button onclick="JSONEdit.save(event)">Save</button>
+        <p id="message"></p>
+    </div>
+    <div id="content-wrapper">
+        <div id="main-content">
         </div>
-        <div id="content-wrapper">
-            <div id="main-content">
+        <div id="side-bar">
+            <div class="side-panel">
+                <div class="side-panel-content">
+                    <div class="side-panel-title w3-teal">
+                        <center>Container tree</center>
+                    </div>
+                    <div id="view-container-tree"></div>
+                </div>
             </div>
-            <div id="side-bar">
-                <div class="side-panel">
-                    <div class="side-panel-content">
-                        <div id="view-container-tree"></div>
-                    </div>
+            <div class="side-panel">
+                <div class="side-panel-title w3-teal">
+                    <center>
+                        <div id="uiElementType">Select object</div>
+                    </center>
                 </div>
-                <div class="side-panel">
-                    <div class="side-panel-title">
-                        <div id="uiElementType"></div>
-                    </div> 
-                    <div class="side-panel-content">
-                        <div id="uiElementProperties"></div>
-                    </div>
-                    <div class="side-panel-bottom">
-                        <button onclick="JSONEdit.apply()">Apply</button>
-                    </div>
+                <div class="side-panel-content">
+                    <div id="uiElementProperties"></div>
                 </div>
-                <div class="side-panel">
-                    <div class="side-panel-content">
-                        <div id="uiElementActions"></div>
-                    </div>
+                <div class="side-panel-bottom">
+                    <button onclick="JSONEdit.apply()">Apply</button>
+                </div>
+            </div>
+            <div class="side-panel">
+                <div class="side-panel-title w3-teal">
+                    <center>
+                        Element Actions
+                    </center>
+                </div>
+                <div class="side-panel-content">
+                    <div id="uiElementActions"></div>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="/js/flex-checkable-tree-view/src/js/flex-tree.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
-<script id="tile-template" type="text/javascript" src="/view/templates.tpl.html"></script>	
-<script type="text/javascript" src="/view/view.js"></script>	
-<script type="text/javascript" src="UIObjectsTemplates.tbjson"></script>	
+<script id="tile-template" type="text/javascript" src="/view/templates.tpl.html"></script>
+<script type="text/javascript" src="/view/view.js"></script>
+<script type="text/javascript" src="UIObjectsTemplates.tbjson"></script>
 <script type="text/javascript" src="JSONEdit.js"></script>
 <script id="tile-actions" type="text/template">
     <div class="property-row">
-        <div class="property-name">Add control</div> 
+        <div class="property-name">Add control</div>
         <select id="controlClasses">
         </select>
         <button onclick="JSONEdit.addControl(event)">+</button>
     </div>
     <div class="property-row">
-        <div class="property-name">Move tile</div> 
+        <div class="property-name">Move tile</div>
         <button onclick="JSONEdit.tileUp(event)">^</button>
         <button onclick="JSONEdit.tileDown(event)">v</button>
-        <div class="ml-1">remove tile</div> 
+        <div class="ml-1">remove tile</div>
         <button class="ml-1" onclick="JSONEdit.removeTile(event)">X</button>
     </div>
     <div class="property-row">
-        <div>Tile push</div> 
+        <div>Tile push</div>
         <button class="ml-1" onclick="JSONEdit.tilePush(event)">=v</button>
-        <div class="ml-1">Tile pop</div> 
+        <div class="ml-1">Tile pop</div>
         <button class="ml-1" onclick="JSONEdit.tilePop(event)">^=</button>
     </div>
 </script>
 <script id="layout-container-actions" type="text/template">
     <div class="property-row">
-        <div class="property-name">Add new tile, ID:</div> 
+        <div class="property-name">Add new tile, ID:</div>
         <input type="text" id="newTileId">
         <button onclick="JSONEdit.addTile(event)">+</button>
     </div>
     <div class="property-row">
-        <div class="property-name">Move container</div> 
+        <div class="property-name">Move container</div>
         <button onclick="JSONEdit.containerUp(event)">^</button>
         <button onclick="JSONEdit.containerDown(event)">v</button>
-        <div class="ml-1">remove container</div> 
+        <div class="ml-1">remove container</div>
         <button class="ml-1" onclick="JSONEdit.removeContainer(event)">X</button>
     </div>
 </script>
 <script id="tile-group-actions" type="text/template">
     <div class="property-row">
-        <div class="property-name">Add Layout Container, ID:</div> 
+        <div class="property-name">Add Layout Container, ID:</div>
         <input type="text" id="newLCId">
         <button onclick="JSONEdit.addLayoutContainer(event)">+</button>
     </div>
 </script>
 <script id="control-actions" type="text/template">
     <div class="property-row">
-        <div class="property-name">Move control</div> 
+        <div class="property-name">Move control</div>
         <button onclick="JSONEdit.controlUp(event)">^</button>
         <button onclick="JSONEdit.controlDown(event)">v</button>
-        <div class="ml-1">remove control</div> 
+        <div class="ml-1">remove control</div>
         <button class="ml-1" onclick="JSONEdit.removeControl(event)">X</button>
     </div>
 </script>
@@ -186,22 +227,22 @@
         <div class="property-name">{name}</div>
         <div class="property-value"><input type="text" value="{value}" id="{id}"></div>
     </div>
-</script>		
+</script>
 <script id="property-template-checkbox" type="text/template">
     <div class="property-row">
         <div class="property-name">{name}</div>
         <div class="property-value"><input type="checkbox" id="{id}"></div>
     </div>
-</script>		
+</script>
 <script id="property-template-number" type="text/template">
     <div class="property-row">
         <div class="property-name">{name}</div>
         <div class="property-value"><input type="number" min="0" value="{value}" id="{id}"></div>
     </div>
-</script>		
+</script>
 <script id="property-template-object" type="text/template">
     <div class="property-group">
         <hr>
         <div class="property-group-name">{name}</div>
     </div>
-</script>		
+</script>
