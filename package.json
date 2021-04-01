@@ -1,0 +1,21 @@
+{
+  "name": "jsonedit",
+  "version": "1.0.0",
+  "description": "super simple TB-JSON editor",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "bin": {
+    "tbjson-edit": "server.js",
+    "tbje": "server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "opn": "^6.0.0",
+    "strip-json-comments": "^3.1.1"
+  }
+}

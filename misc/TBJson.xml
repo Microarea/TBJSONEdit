@@ -1,0 +1,1987 @@
+<!-- https://github.com/Microarea/tbw-client/tree/develop/tb-json/Templates/TBJsonTags.xml -->
+<Tags>
+  <Tag type="Panel">
+    <property name="id" type="String" count="491" />
+    <property name="text" type="String" count="87" />
+    <property name="x" type="Integer" count="115" />
+    <property name="y" type="Integer" count="115" />
+    <property name="width" type="Integer" count="203" />
+    <property name="height" type="Integer" count="204" />
+    <property name="visible" type="Boolean" count="19" />
+    <property name="caption" type="Boolean" count="49" />
+    <property name="systemMenu" type="Boolean" count="46" />
+    <property name="child" type="Boolean" count="232" />
+    <property name="modalFrame" type="Boolean" count="37" />
+    <property name="context" type="String" count="200" />
+    <property name="items" type="Array" count="254" />
+    <property name="name" type="String" count="63" />
+    <property name="accelerators" type="Array" count="244" />
+    <property name="border" type="Boolean" count="4" />
+    <property name="dialogFrame" type="Boolean" count="3" />
+    <property name="overlapped" type="Boolean" count="19" />
+    <property name="tabStop" type="Boolean" count="5" />
+    <property name="enabled" type="Boolean" count="9" />
+    <property name="exStyle" type="Integer" count="5" />
+    <property name="thickFrame" type="Boolean" count="7" />
+    <property name="center" type="Boolean" count="3" />
+    <property name="tileStyle" type="String" count="1" Values="None,Normal,Filter,Header,Footer,Wizard,Parameters,Batch" />
+    <property name="maximizeBox" type="Boolean" count="1" />
+    <property name="minimizeBox" type="Boolean" count="1" />
+    <property name="style" type="Integer" count="1" />
+    <property name="hasStaticArea" type="Boolean" count="1" />
+    <property name="hasTitle" type="Boolean" count="5" />
+    <property name="centerMouse" type="Boolean" count="1" />
+    <property name="controlLabel" type="String" count="1" />
+    <property name="controlCaption" type="String" count="2" />
+  </Tag>
+  <Tag type="Group">
+    <property name="id" type="String" count="93" />
+    <property name="text" type="String" count="68" />
+    <property name="x" type="Integer" count="92" />
+    <property name="y" type="Integer" count="92" />
+    <property name="width" type="Integer" count="93" />
+    <property name="height" type="Integer" count="93" />
+    <property name="group" type="Boolean" count="2" />
+    <property name="controlClass" type="String" count="3" />
+    <property name="controlSize" type="Integer" count="4" />
+    <property name="captionSize" type="Integer" count="4" />
+    <property name="visible" type="Boolean" count="7" />
+    <property name="transparent" type="Boolean" count="2" />
+    <property name="anchor" type="String" count="1" />
+    <property name="marginLeft" type="Integer" count="1" />
+    <property name="isText" type="Boolean" count="2" />
+    <property name="vertAlign" type="String" count="2" Values="Top,Center,Bottom,Undefined" />
+  </Tag>
+  <Tag type="Radio">
+    <property name="id" type="String" count="2093" />
+    <property name="text" type="String" count="2065" />
+    <property name="x" type="Integer" count="126" />
+    <property name="y" type="Integer" count="126" />
+    <property name="width" type="Integer" count="2092" />
+    <property name="height" type="Integer" count="2093" />
+    <property name="group" type="Boolean" count="859" />
+    <property name="tabStop" type="Boolean" count="958" />
+    <property name="vertAlign" type="String" count="90" Values="Top,Center,Bottom,Undefined" />
+    <property name="anchor" type="String" count="1965" />
+    <property name="controlClass" type="String" count="1966" />
+    <property name="binding" type="Object" count="1968">
+      <property name="activation" type="String" count="27" />
+      <property name="buttonId" type="Integer" count="2017" />
+      <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+      <property name="controlClass" type="String" count="1" />
+      <property name="datasource" type="String" count="27152" />
+      <property name="enableAddOnFly" type="Boolean" count="1289" />
+      <property name="enableLink" type="Boolean" count="9" />
+      <property name="fields" type="Array" count="28" />
+      <property name="hotLink" type="Object" count="2053">
+        <property name="addOnFlyNamespace" type="String" count="13" />
+        <property name="autoFind" type="Boolean" count="2" />
+        <property name="auxKeys" type="Array" count="68" />
+        <property name="buttonId" type="Integer" count="2" />
+        <property name="enableAddOnFly" type="Boolean" count="777" />
+        <property name="enableHotLink" type="Boolean" count="6" />
+        <property name="enableLink" type="Boolean" count="14" />
+        <property name="fields" type="Array" count="27" />
+        <property name="inlineHotlinkDescription" type="String" count="583" />
+        <property name="items" type="Array" count="103" />
+        <property name="mustExistData" type="Boolean" count="1268" />
+        <property name="name" type="String" count="2053" />
+        <property name="namespace" type="String" count="1974" />
+        <property name="selector" type="String" count="103" />
+      </property>
+      <property name="hotLink" type="String" count="2659" />
+      <property name="hotLinkNS" type="String" count="2611" />
+      <property name="inlineHotlinkDescription" type="String" count="2" />
+      <property name="items" type="Array" count="49" />
+      <property name="minValue" type="Integer" count="1" />
+      <property name="mustExistData" type="Boolean" count="1642" />
+      <property name="selector" type="String" count="48" />
+    </property>
+    <property name="controlSize" type="Integer" count="1965" />
+    <property name="captionSize" type="Integer" count="1965" />
+    <property name="name" type="String" count="700" />
+    <property name="auto" type="Boolean" count="863" />
+    <property name="activation" type="String" count="78" />
+    <property name="isText" type="Boolean" count="440" />
+    <property name="multiline" type="Boolean" count="42" />
+    <property name="marginLeft" type="Integer" count="74" />
+    <property name="groupName" type="String" count="28" />
+    <property name="textAlign" type="String" count="95" Values="Left,Center,Right,Undefined" />
+    <property name="labelOnLeft" type="Boolean" count="86" />
+    <property name="column" type="String" count="33" />
+    <property name="customSize" type="Boolean" count="80" />
+    <property name="captionVerticalAlign" type="String" count="1" />
+    <property name="marginTop" type="Integer" count="4" />
+    <property name="masterType" type="String" count="1" />
+    <property name="useFormatMask" type="Boolean" count="4" />
+    <property name="visible" type="Boolean" count="8" />
+    <property name="environment" type="String" count="4" />
+    <property name="checked" type="Boolean" count="2" />
+    <property name="hfill" type="Boolean" count="4" />
+    <property name="vfill" type="Boolean" count="4" />
+    <property name="hint" type="String" count="1" />
+  </Tag>
+  <Tag type="Label">
+    <property name="id" type="String" count="5888" />
+    <property name="text" type="String" count="1739" />
+    <property name="x" type="Integer" count="388" />
+    <property name="y" type="Integer" count="388" />
+    <property name="width" type="Integer" count="5754" />
+    <property name="height" type="Integer" count="5802" />
+    <property name="textAlign" type="String" count="1973" Values="Left,Center,Right,Undefined" />
+    <property name="activation" type="String" count="964" />
+    <property name="anchor" type="String" count="5471" />
+    <property name="controlSize" type="Integer" count="5328" />
+    <property name="captionSize" type="Integer" count="5467" />
+    <property name="customSize" type="Boolean" count="886" />
+    <property name="controlClass" type="String" count="4515" />
+    <property name="binding" type="Object" count="3772">
+      <property name="activation" type="String" count="27" />
+      <property name="buttonId" type="Integer" count="2017" />
+      <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+      <property name="controlClass" type="String" count="1" />
+      <property name="datasource" type="String" count="27152" />
+      <property name="enableAddOnFly" type="Boolean" count="1289" />
+      <property name="enableLink" type="Boolean" count="9" />
+      <property name="fields" type="Array" count="28" />
+      <property name="hotLink" type="Object" count="2053">
+        <property name="addOnFlyNamespace" type="String" count="13" />
+        <property name="autoFind" type="Boolean" count="2" />
+        <property name="auxKeys" type="Array" count="68" />
+        <property name="buttonId" type="Integer" count="2" />
+        <property name="enableAddOnFly" type="Boolean" count="777" />
+        <property name="enableHotLink" type="Boolean" count="6" />
+        <property name="enableLink" type="Boolean" count="14" />
+        <property name="fields" type="Array" count="27" />
+        <property name="inlineHotlinkDescription" type="String" count="583" />
+        <property name="items" type="Array" count="103" />
+        <property name="mustExistData" type="Boolean" count="1268" />
+        <property name="name" type="String" count="2053" />
+        <property name="namespace" type="String" count="1974" />
+        <property name="selector" type="String" count="103" />
+      </property>
+      <property name="hotLink" type="String" count="2659" />
+      <property name="hotLinkNS" type="String" count="2611" />
+      <property name="inlineHotlinkDescription" type="String" count="2" />
+      <property name="items" type="Array" count="49" />
+      <property name="minValue" type="Integer" count="1" />
+      <property name="mustExistData" type="Boolean" count="1642" />
+      <property name="selector" type="String" count="48" />
+    </property>
+    <property name="border" type="Boolean" count="3542" />
+    <property name="group" type="Boolean" count="4536" />
+    <property name="noPrefix" type="Boolean" count="2883" />
+    <property name="controlCaption" type="String" count="1548" />
+    <property name="tabStop" type="Boolean" count="223" />
+    <property name="linePosition" type="Integer" count="352" />
+    <property name="marginLeft" type="Integer" count="877" />
+    <property name="environment" type="String" count="176" />
+    <property name="bitmap" type="Boolean" count="272" />
+    <property name="blackRect" type="Boolean" count="54" />
+    <property name="grayFrame" type="Boolean" count="123" />
+    <property name="leftNoWrap" type="Boolean" count="66" />
+    <property name="multiline" type="Boolean" count="101" />
+    <property name="name" type="String" count="1139" />
+    <property name="whiteRect" type="Boolean" count="49" />
+    <property name="font" type="Object" count="190">
+      <property name="bold" type="Boolean" count="40" />
+      <property name="faceName" type="String" count="18" />
+      <property name="italic" type="Boolean" count="172" />
+      <property name="size" type="String" count="10" Values="Micro,Mini,Standard,Large,Wide,AutoFill,Undefined" />
+      <property name="underline" type="Boolean" count="22" />
+    </property>
+    <property name="actionData" type="Object" count="1">
+      <property name="activation" type="String" count="38" />
+      <property name="binding" type="Object" count="10">
+        <property name="activation" type="String" count="27" />
+        <property name="buttonId" type="Integer" count="2017" />
+        <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+        <property name="controlClass" type="String" count="1" />
+        <property name="datasource" type="String" count="27152" />
+        <property name="enableAddOnFly" type="Boolean" count="1289" />
+        <property name="enableLink" type="Boolean" count="9" />
+        <property name="fields" type="Array" count="28" />
+        <property name="hotLink" type="Object" count="2053">
+          <property name="addOnFlyNamespace" type="String" count="13" />
+          <property name="autoFind" type="Boolean" count="2" />
+          <property name="auxKeys" type="Array" count="68" />
+          <property name="buttonId" type="Integer" count="2" />
+          <property name="enableAddOnFly" type="Boolean" count="777" />
+          <property name="enableHotLink" type="Boolean" count="6" />
+          <property name="enableLink" type="Boolean" count="14" />
+          <property name="fields" type="Array" count="27" />
+          <property name="inlineHotlinkDescription" type="String" count="583" />
+          <property name="items" type="Array" count="103" />
+          <property name="mustExistData" type="Boolean" count="1268" />
+          <property name="name" type="String" count="2053" />
+          <property name="namespace" type="String" count="1974" />
+          <property name="selector" type="String" count="103" />
+        </property>
+        <property name="hotLink" type="String" count="2659" />
+        <property name="hotLinkNS" type="String" count="2611" />
+        <property name="inlineHotlinkDescription" type="String" count="2" />
+        <property name="items" type="Array" count="49" />
+        <property name="minValue" type="Integer" count="1" />
+        <property name="mustExistData" type="Boolean" count="1642" />
+        <property name="selector" type="String" count="48" />
+      </property>
+      <property name="command" type="String" count="63" />
+      <property name="enabledInBrowse" type="Boolean" count="47" />
+      <property name="hint" type="String" count="50" />
+      <property name="icon" type="String" count="52" />
+    </property>
+    <property name="column" type="String" count="832" />
+    <property name="italic" type="Integer" count="2" />
+    <property name="rows" type="Integer" count="33" />
+    <property name="blackFrame" type="Boolean" count="33" />
+    <property name="rightAnchor" type="Boolean" count="4" />
+    <property name="captionAlign" type="String" count="74" />
+    <property name="captionFont" type="Object" count="89">
+      <property name="bold" type="Boolean" count="65" />
+      <property name="italic" type="Boolean" count="96" />
+    </property>
+    <property name="marginTop" type="Integer" count="2" />
+    <property name="vertAlign" type="String" count="145" Values="Top,Center,Bottom,Undefined" />
+    <property name="notify" type="Boolean" count="53" />
+    <property name="linePosition" type="String" count="199" />
+    <property name="centerImage" type="Boolean" count="62" />
+    <property name="activation" type="Boolean" count="2" />
+    <property name="customSize" type="String" count="3" />
+    <property name="autoHScroll" type="Boolean" count="37" />
+    <property name="numberDecimal" type="String" count="1" />
+    <property name="sunken" type="Boolean" count="74" />
+    <property name="visible" type="Boolean" count="38" />
+    <property name="captionWidth" type="Integer" count="178" />
+    <property name="useFormatMask" type="Boolean" count="2" />
+    <property name="chars" type="Integer" count="26" />
+    <property name="etchedFrame" type="Integer" count="1" />
+    <property name="exStyle" type="Integer" count="13" />
+    <property name="whiteFrame" type="Boolean" count="2" />
+    <property name="transparent" type="Boolean" count="18" />
+    <property name="batchProgress" type="String" count="11" />
+    <property name="batchDescription" type="String" count="6" />
+    <property name="numberDecimal" type="Integer" count="2" />
+    <property name="auto" type="Boolean" count="3" />
+    <property name="grayRect" type="Boolean" count="5" />
+    <property name="icon" type="Boolean" count="2" />
+    <property name="isStatic" type="Boolean" count="2" />
+    <property name="controlSize" type="String" count="1" />
+    <property name="comboType" type="String" count="1" Values="Simple,DropDown,DropDownList" />
+    <property name="captionVerticalAlign" type="String" count="4" />
+    <property name="stateData" type="Object" count="1">
+      <property name="binding" type="Object" count="224">
+        <property name="activation" type="String" count="27" />
+        <property name="buttonId" type="Integer" count="2017" />
+        <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+        <property name="controlClass" type="String" count="1" />
+        <property name="datasource" type="String" count="27152" />
+        <property name="enableAddOnFly" type="Boolean" count="1289" />
+        <property name="enableLink" type="Boolean" count="9" />
+        <property name="fields" type="Array" count="28" />
+        <property name="hotLink" type="Object" count="2053">
+          <property name="addOnFlyNamespace" type="String" count="13" />
+          <property name="autoFind" type="Boolean" count="2" />
+          <property name="auxKeys" type="Array" count="68" />
+          <property name="buttonId" type="Integer" count="2" />
+          <property name="enableAddOnFly" type="Boolean" count="777" />
+          <property name="enableHotLink" type="Boolean" count="6" />
+          <property name="enableLink" type="Boolean" count="14" />
+          <property name="fields" type="Array" count="27" />
+          <property name="inlineHotlinkDescription" type="String" count="583" />
+          <property name="items" type="Array" count="103" />
+          <property name="mustExistData" type="Boolean" count="1268" />
+          <property name="name" type="String" count="2053" />
+          <property name="namespace" type="String" count="1974" />
+          <property name="selector" type="String" count="103" />
+        </property>
+        <property name="hotLink" type="String" count="2659" />
+        <property name="hotLinkNS" type="String" count="2611" />
+        <property name="inlineHotlinkDescription" type="String" count="2" />
+        <property name="items" type="Array" count="49" />
+        <property name="minValue" type="Integer" count="1" />
+        <property name="mustExistData" type="Boolean" count="1642" />
+        <property name="selector" type="String" count="48" />
+      </property>
+      <property name="invertState" type="Boolean" count="208" />
+    </property>
+    <property name="masterType" type="String" count="2" />
+    <property name="hfill" type="Boolean" count="9" />
+    <property name="vfill" type="Boolean" count="10" />
+    <property name="autoVScroll" type="Boolean" count="17" />
+    <property name="vScroll" type="Boolean" count="18" />
+    <property name="wantReturn" type="Boolean" count="21" />
+    <property name="minValue" type="Integer" count="2" />
+    <property name="maxValue" type="Integer" count="2" />
+    <property name="manageClick" type="Boolean" count="1" />
+  </Tag>
+  <Tag type="Edit">
+    <property name="id" type="String" count="6647" />
+    <property name="x" type="Integer" count="202" />
+    <property name="y" type="Integer" count="202" />
+    <property name="width" type="Integer" count="6634" />
+    <property name="height" type="Integer" count="6633" />
+    <property name="group" type="Boolean" count="205" />
+    <property name="number" type="Boolean" count="6" />
+    <property name="controlClass" type="String" count="6497" />
+    <property name="binding" type="Object" count="6502">
+      <property name="activation" type="String" count="27" />
+      <property name="buttonId" type="Integer" count="2017" />
+      <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+      <property name="controlClass" type="String" count="1" />
+      <property name="datasource" type="String" count="27152" />
+      <property name="enableAddOnFly" type="Boolean" count="1289" />
+      <property name="enableLink" type="Boolean" count="9" />
+      <property name="fields" type="Array" count="28" />
+      <property name="hotLink" type="Object" count="2053">
+        <property name="addOnFlyNamespace" type="String" count="13" />
+        <property name="autoFind" type="Boolean" count="2" />
+        <property name="auxKeys" type="Array" count="68" />
+        <property name="buttonId" type="Integer" count="2" />
+        <property name="enableAddOnFly" type="Boolean" count="777" />
+        <property name="enableHotLink" type="Boolean" count="6" />
+        <property name="enableLink" type="Boolean" count="14" />
+        <property name="fields" type="Array" count="27" />
+        <property name="inlineHotlinkDescription" type="String" count="583" />
+        <property name="items" type="Array" count="103" />
+        <property name="mustExistData" type="Boolean" count="1268" />
+        <property name="name" type="String" count="2053" />
+        <property name="namespace" type="String" count="1974" />
+        <property name="selector" type="String" count="103" />
+      </property>
+      <property name="hotLink" type="String" count="2659" />
+      <property name="hotLinkNS" type="String" count="2611" />
+      <property name="inlineHotlinkDescription" type="String" count="2" />
+      <property name="items" type="Array" count="49" />
+      <property name="minValue" type="Integer" count="1" />
+      <property name="mustExistData" type="Boolean" count="1642" />
+      <property name="selector" type="String" count="48" />
+    </property>
+    <property name="autoHScroll" type="Boolean" count="5733" />
+    <property name="controlCaption" type="String" count="5872" />
+    <property name="anchor" type="String" count="6413" />
+    <property name="captionSize" type="Integer" count="6429" />
+    <property name="controlSize" type="Integer" count="6406" />
+    <property name="stateData" type="Object" count="197">
+      <property name="binding" type="Object" count="224">
+        <property name="activation" type="String" count="27" />
+        <property name="buttonId" type="Integer" count="2017" />
+        <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+        <property name="controlClass" type="String" count="1" />
+        <property name="datasource" type="String" count="27152" />
+        <property name="enableAddOnFly" type="Boolean" count="1289" />
+        <property name="enableLink" type="Boolean" count="9" />
+        <property name="fields" type="Array" count="28" />
+        <property name="hotLink" type="Object" count="2053">
+          <property name="addOnFlyNamespace" type="String" count="13" />
+          <property name="autoFind" type="Boolean" count="2" />
+          <property name="auxKeys" type="Array" count="68" />
+          <property name="buttonId" type="Integer" count="2" />
+          <property name="enableAddOnFly" type="Boolean" count="777" />
+          <property name="enableHotLink" type="Boolean" count="6" />
+          <property name="enableLink" type="Boolean" count="14" />
+          <property name="fields" type="Array" count="27" />
+          <property name="inlineHotlinkDescription" type="String" count="583" />
+          <property name="items" type="Array" count="103" />
+          <property name="mustExistData" type="Boolean" count="1268" />
+          <property name="name" type="String" count="2053" />
+          <property name="namespace" type="String" count="1974" />
+          <property name="selector" type="String" count="103" />
+        </property>
+        <property name="hotLink" type="String" count="2659" />
+        <property name="hotLinkNS" type="String" count="2611" />
+        <property name="inlineHotlinkDescription" type="String" count="2" />
+        <property name="items" type="Array" count="49" />
+        <property name="minValue" type="Integer" count="1" />
+        <property name="mustExistData" type="Boolean" count="1642" />
+        <property name="selector" type="String" count="48" />
+      </property>
+      <property name="invertState" type="Boolean" count="208" />
+    </property>
+    <property name="activation" type="String" count="830" />
+    <property name="marginLeft" type="Integer" count="1949" />
+    <property name="autoVScroll" type="Boolean" count="499" />
+    <property name="wantReturn" type="Boolean" count="480" />
+    <property name="multiline" type="Boolean" count="582" />
+    <property name="controlStyle" type="String" count="48" />
+    <property name="upperCase" type="Boolean" count="335" />
+    <property name="textLimit" type="Integer" count="102" />
+    <property name="environment" type="String" count="57" />
+    <property name="masterType" type="String" count="197" />
+    <property name="tabStop" type="Boolean" count="91" />
+    <property name="controlBehaviour" type="Object" count="15">
+      <property name="commandHandler" type="Boolean" count="37" />
+      <property name="dataAdapter" type="Boolean" count="34" />
+      <property name="itemSource" type="Boolean" count="145" />
+      <property name="name" type="String" count="189" />
+      <property name="namespace" type="String" count="148" />
+      <property name="validator" type="Boolean" count="34" />
+    </property>
+    <property name="menu" type="Object" count="2">
+      <property name="items" type="Array" count="3" />
+    </property>
+    <property name="name" type="String" count="1178" />
+    <property name="border" type="Boolean" count="308" />
+    <property name="minValue" type="Integer" count="257" />
+    <property name="selector" type="Object" count="74">
+      <property name="address" type="String" count="49" />
+      <property name="city" type="String" count="49" />
+      <property name="companyName" type="String" count="17" />
+      <property name="contact" type="String" count="2" />
+      <property name="country" type="String" count="29" />
+      <property name="county" type="String" count="49" />
+      <property name="discount1" type="String" count="2" />
+      <property name="discount2" type="String" count="2" />
+      <property name="exempt" type="String" count="6" />
+      <property name="federal" type="String" count="21" />
+      <property name="inactiveSubject" type="String" count="2" />
+      <property name="isoCode" type="String" count="81" />
+      <property name="kind" type="String" count="6" />
+      <property name="latitude" type="String" count="15" />
+      <property name="longitude" type="String" count="15" />
+      <property name="naturalPerson" type="String" count="9" />
+      <property name="region" type="String" count="19" />
+      <property name="splitTax" type="String" count="2" />
+      <property name="splitTaxIBAN" type="String" count="2" />
+      <property name="streetNo" type="String" count="27" />
+      <property name="suspendedTax" type="String" count="3" />
+      <property name="taxIdType" type="String" count="6" />
+      <property name="zipCode" type="String" count="32" />
+    </property>
+    <property name="namespaceType" type="String" count="34" />
+    <property name="maxValue" type="Integer" count="75" />
+    <property name="vScroll" type="Boolean" count="270" />
+    <property name="numberer" type="Object" count="246">
+      <property name="enableCtrlInEdit" type="String" count="1" />
+      <property name="enableCtrlInEdit" type="Boolean" count="15" />
+      <property name="serviceName" type="String" count="84" />
+      <property name="serviceNs" type="String" count="272" />
+      <property name="useFormatMask" type="Boolean" count="14" />
+    </property>
+    <property name="customSize" type="Boolean" count="212" />
+    <property name="chars" type="Integer" count="77" />
+    <property name="column" type="String" count="108" />
+    <property name="auto" type="Boolean" count="21" />
+    <property name="captionAlign" type="String" count="100" />
+    <property name="captionWidth" type="Integer" count="142" />
+    <property name="maxValue" type="String" count="43" />
+    <property name="minValue" type="String" count="58" />
+    <property name="actionData" type="Object" count="59">
+      <property name="activation" type="String" count="38" />
+      <property name="binding" type="Object" count="10">
+        <property name="activation" type="String" count="27" />
+        <property name="buttonId" type="Integer" count="2017" />
+        <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+        <property name="controlClass" type="String" count="1" />
+        <property name="datasource" type="String" count="27152" />
+        <property name="enableAddOnFly" type="Boolean" count="1289" />
+        <property name="enableLink" type="Boolean" count="9" />
+        <property name="fields" type="Array" count="28" />
+        <property name="hotLink" type="Object" count="2053">
+          <property name="addOnFlyNamespace" type="String" count="13" />
+          <property name="autoFind" type="Boolean" count="2" />
+          <property name="auxKeys" type="Array" count="68" />
+          <property name="buttonId" type="Integer" count="2" />
+          <property name="enableAddOnFly" type="Boolean" count="777" />
+          <property name="enableHotLink" type="Boolean" count="6" />
+          <property name="enableLink" type="Boolean" count="14" />
+          <property name="fields" type="Array" count="27" />
+          <property name="inlineHotlinkDescription" type="String" count="583" />
+          <property name="items" type="Array" count="103" />
+          <property name="mustExistData" type="Boolean" count="1268" />
+          <property name="name" type="String" count="2053" />
+          <property name="namespace" type="String" count="1974" />
+          <property name="selector" type="String" count="103" />
+        </property>
+        <property name="hotLink" type="String" count="2659" />
+        <property name="hotLinkNS" type="String" count="2611" />
+        <property name="inlineHotlinkDescription" type="String" count="2" />
+        <property name="items" type="Array" count="49" />
+        <property name="minValue" type="Integer" count="1" />
+        <property name="mustExistData" type="Boolean" count="1642" />
+        <property name="selector" type="String" count="48" />
+      </property>
+      <property name="command" type="String" count="63" />
+      <property name="enabledInBrowse" type="Boolean" count="47" />
+      <property name="hint" type="String" count="50" />
+      <property name="icon" type="String" count="52" />
+    </property>
+    <property name="rows" type="Integer" count="63" />
+    <property name="marginTop" type="Integer" count="4" />
+    <property name="maxValue" type="Float" count="4" />
+    <property name="numberDecimal" type="Integer" count="35" />
+    <property name="exStyle" type="Integer" count="4" />
+    <property name="readOnly" type="Boolean" count="129" />
+    <property name="noPrefix" type="Boolean" count="24" />
+    <property name="captionFont" type="Object" count="5">
+      <property name="bold" type="Boolean" count="65" />
+      <property name="italic" type="Boolean" count="96" />
+    </property>
+    <property name="useFormatMask" type="Boolean" count="4" />
+    <property name="captionVerticalAlign" type="Integer" count="1" />
+    <property name="enabled" type="Boolean" count="4" />
+    <property name="visible" type="Boolean" count="7" />
+    <property name="ledgerImputable" type="Boolean" count="5" />
+    <property name="textAlign" type="String" count="49" Values="Left,Center,Right,Undefined" />
+    <property name="minValue" type="Float" count="1" />
+    <property name="lowerCase" type="Boolean" count="1" />
+    <property name="text" type="String" count="2" />
+    <property name="hScroll" type="Boolean" count="2" />
+    <property name="captionVerticalAlign" type="String" count="9" />
+    <property name="parent" type="String" count="2" />
+    <property name="centerImage" type="Boolean" count="1" />
+    <property name="sort" type="Boolean" count="7" />
+    <property name="hidden" type="String" count="1" />
+    <property name="grayed" type="String" count="1" />
+    <property name="acceptFiles" type="Boolean" count="4" />
+    <property name="hfill" type="Boolean" count="40" />
+    <property name="vfill" type="Boolean" count="40" />
+    <property name="objectType" type="String" count="1" />
+    <property name="comboType" type="String" count="14" Values="Simple,DropDown,DropDownList" />
+    <property name="labelOnLeft" type="Boolean" count="3" />
+    <property name="password" type="Boolean" count="2" />
+    <property name="beforeItem" type="String" count="3" />
+    <property name="buttonId" type="Integer" count="4" />
+  </Tag>
+  <Tag type="Image">
+    <property name="id" type="String" count="6" />
+    <property name="x" type="Integer" count="6" />
+    <property name="y" type="Integer" count="6" />
+    <property name="width" type="Integer" count="6" />
+    <property name="height" type="Integer" count="6" />
+    <property name="group" type="Boolean" count="1" />
+    <property name="centerImage" type="Boolean" count="1" />
+    <property name="transparent" type="Boolean" count="1" />
+    <property name="realSizeImage" type="Boolean" count="2" />
+  </Tag>
+  <Tag type="Check">
+    <property name="id" type="String" count="2378" />
+    <property name="text" type="String" count="2271" />
+    <property name="x" type="Integer" count="66" />
+    <property name="y" type="Integer" count="66" />
+    <property name="width" type="Integer" count="2348" />
+    <property name="height" type="Integer" count="2376" />
+    <property name="group" type="Boolean" count="84" />
+    <property name="auto" type="Boolean" count="1044" />
+    <property name="controlClass" type="String" count="2317" />
+    <property name="binding" type="Object" count="2315">
+      <property name="activation" type="String" count="27" />
+      <property name="buttonId" type="Integer" count="2017" />
+      <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+      <property name="controlClass" type="String" count="1" />
+      <property name="datasource" type="String" count="27152" />
+      <property name="enableAddOnFly" type="Boolean" count="1289" />
+      <property name="enableLink" type="Boolean" count="9" />
+      <property name="fields" type="Array" count="28" />
+      <property name="hotLink" type="Object" count="2053">
+        <property name="addOnFlyNamespace" type="String" count="13" />
+        <property name="autoFind" type="Boolean" count="2" />
+        <property name="auxKeys" type="Array" count="68" />
+        <property name="buttonId" type="Integer" count="2" />
+        <property name="enableAddOnFly" type="Boolean" count="777" />
+        <property name="enableHotLink" type="Boolean" count="6" />
+        <property name="enableLink" type="Boolean" count="14" />
+        <property name="fields" type="Array" count="27" />
+        <property name="inlineHotlinkDescription" type="String" count="583" />
+        <property name="items" type="Array" count="103" />
+        <property name="mustExistData" type="Boolean" count="1268" />
+        <property name="name" type="String" count="2053" />
+        <property name="namespace" type="String" count="1974" />
+        <property name="selector" type="String" count="103" />
+      </property>
+      <property name="hotLink" type="String" count="2659" />
+      <property name="hotLinkNS" type="String" count="2611" />
+      <property name="inlineHotlinkDescription" type="String" count="2" />
+      <property name="items" type="Array" count="49" />
+      <property name="minValue" type="Integer" count="1" />
+      <property name="mustExistData" type="Boolean" count="1642" />
+      <property name="selector" type="String" count="48" />
+    </property>
+    <property name="textAlign" type="String" count="1416" Values="Left,Center,Right,Undefined" />
+    <property name="labelOnLeft" type="Boolean" count="1428" />
+    <property name="anchor" type="String" count="2282" />
+    <property name="captionSize" type="Integer" count="2288" />
+    <property name="controlSize" type="Integer" count="2288" />
+    <property name="vertAlign" type="String" count="223" Values="Top,Center,Bottom,Undefined" />
+    <property name="activation" type="String" count="581" />
+    <property name="tabStop" type="Boolean" count="113" />
+    <property name="name" type="String" count="533" />
+    <property name="marginLeft" type="Integer" count="297" />
+    <property name="isText" type="Boolean" count="396" />
+    <property name="customSize" type="Boolean" count="151" />
+    <property name="multiline" type="Boolean" count="479" />
+    <property name="column" type="String" count="182" />
+    <property name="controlCaption" type="String" count="4" />
+    <property name="captionAlign" type="String" count="1" />
+    <property name="visible" type="Boolean" count="4" />
+    <property name="enabled" type="Boolean" count="1" />
+    <property name="icon" type="Boolean" count="11" />
+    <property name="hfill" type="Boolean" count="18" />
+    <property name="vfill" type="Boolean" count="18" />
+    <property name="captionWidth" type="Integer" count="4" />
+    <property name="environment" type="String" count="13" />
+    <property name="captionVerticalAlign" type="String" count="3" />
+    <property name="checked" type="Boolean" count="9" />
+    <property name="exStyle" type="Integer" count="1" />
+    <property name="captionFont" type="Object" count="1">
+      <property name="bold" type="Boolean" count="65" />
+      <property name="italic" type="Boolean" count="96" />
+    </property>
+    <property name="comboType" type="String" count="2" Values="Simple,DropDown,DropDownList" />
+  </Tag>
+  <Tag type="Button">
+    <property name="id" type="String" count="288" />
+    <property name="text" type="String" count="155" />
+    <property name="x" type="Integer" count="149" />
+    <property name="y" type="Integer" count="150" />
+    <property name="width" type="Integer" count="287" />
+    <property name="height" type="Integer" count="287" />
+    <property name="group" type="Boolean" count="6" />
+    <property name="default" type="Boolean" count="21" />
+    <property name="controlClass" type="String" count="127" />
+    <property name="binding" type="Object" count="40">
+      <property name="activation" type="String" count="27" />
+      <property name="buttonId" type="Integer" count="2017" />
+      <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+      <property name="controlClass" type="String" count="1" />
+      <property name="datasource" type="String" count="27152" />
+      <property name="enableAddOnFly" type="Boolean" count="1289" />
+      <property name="enableLink" type="Boolean" count="9" />
+      <property name="fields" type="Array" count="28" />
+      <property name="hotLink" type="Object" count="2053">
+        <property name="addOnFlyNamespace" type="String" count="13" />
+        <property name="autoFind" type="Boolean" count="2" />
+        <property name="auxKeys" type="Array" count="68" />
+        <property name="buttonId" type="Integer" count="2" />
+        <property name="enableAddOnFly" type="Boolean" count="777" />
+        <property name="enableHotLink" type="Boolean" count="6" />
+        <property name="enableLink" type="Boolean" count="14" />
+        <property name="fields" type="Array" count="27" />
+        <property name="inlineHotlinkDescription" type="String" count="583" />
+        <property name="items" type="Array" count="103" />
+        <property name="mustExistData" type="Boolean" count="1268" />
+        <property name="name" type="String" count="2053" />
+        <property name="namespace" type="String" count="1974" />
+        <property name="selector" type="String" count="103" />
+      </property>
+      <property name="hotLink" type="String" count="2659" />
+      <property name="hotLinkNS" type="String" count="2611" />
+      <property name="inlineHotlinkDescription" type="String" count="2" />
+      <property name="items" type="Array" count="49" />
+      <property name="minValue" type="Integer" count="1" />
+      <property name="mustExistData" type="Boolean" count="1642" />
+      <property name="selector" type="String" count="48" />
+    </property>
+    <property name="ownerDraw" type="Boolean" count="119" />
+    <property name="controlCaption" type="String" count="17" />
+    <property name="anchor" type="String" count="115" />
+    <property name="captionSize" type="Integer" count="124" />
+    <property name="controlSize" type="Integer" count="120" />
+    <property name="name" type="String" count="19" />
+    <property name="environment" type="String" count="62" />
+    <property name="clipChildren" type="Boolean" count="53" />
+    <property name="tabStop" type="Boolean" count="17" />
+    <property name="textAlign" type="String" count="12" Values="Left,Center,Right,Undefined" />
+    <property name="vertAlign" type="String" count="17" Values="Top,Center,Bottom,Undefined" />
+    <property name="isText" type="Boolean" count="7" />
+    <property name="marginLeft" type="Integer" count="8" />
+    <property name="activation" type="String" count="44" />
+    <property name="icon" type="Boolean" count="3" />
+    <property name="multiline" type="Boolean" count="3" />
+    <property name="transparent" type="Boolean" count="1" />
+    <property name="exStyle" type="Integer" count="1" />
+    <property name="visible" type="Boolean" count="2" />
+    <property name="customSize" type="Boolean" count="7" />
+    <property name="align" type="String" count="1" />
+    <property name="marginTop" type="Integer" count="3" />
+    <property name="column" type="String" count="6" />
+    <property name="hint" type="String" count="1" />
+    <property name="alignRight" type="Boolean" count="1" />
+    <property name="actionData" type="Object" count="2">
+      <property name="activation" type="String" count="38" />
+      <property name="binding" type="Object" count="10">
+        <property name="activation" type="String" count="27" />
+        <property name="buttonId" type="Integer" count="2017" />
+        <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+        <property name="controlClass" type="String" count="1" />
+        <property name="datasource" type="String" count="27152" />
+        <property name="enableAddOnFly" type="Boolean" count="1289" />
+        <property name="enableLink" type="Boolean" count="9" />
+        <property name="fields" type="Array" count="28" />
+        <property name="hotLink" type="Object" count="2053">
+          <property name="addOnFlyNamespace" type="String" count="13" />
+          <property name="autoFind" type="Boolean" count="2" />
+          <property name="auxKeys" type="Array" count="68" />
+          <property name="buttonId" type="Integer" count="2" />
+          <property name="enableAddOnFly" type="Boolean" count="777" />
+          <property name="enableHotLink" type="Boolean" count="6" />
+          <property name="enableLink" type="Boolean" count="14" />
+          <property name="fields" type="Array" count="27" />
+          <property name="inlineHotlinkDescription" type="String" count="583" />
+          <property name="items" type="Array" count="103" />
+          <property name="mustExistData" type="Boolean" count="1268" />
+          <property name="name" type="String" count="2053" />
+          <property name="namespace" type="String" count="1974" />
+          <property name="selector" type="String" count="103" />
+        </property>
+        <property name="hotLink" type="String" count="2659" />
+        <property name="hotLinkNS" type="String" count="2611" />
+        <property name="inlineHotlinkDescription" type="String" count="2" />
+        <property name="items" type="Array" count="49" />
+        <property name="minValue" type="Integer" count="1" />
+        <property name="mustExistData" type="Boolean" count="1642" />
+        <property name="selector" type="String" count="48" />
+      </property>
+      <property name="command" type="String" count="63" />
+      <property name="enabledInBrowse" type="Boolean" count="47" />
+      <property name="hint" type="String" count="50" />
+      <property name="icon" type="String" count="52" />
+    </property>
+    <property name="flat" type="Boolean" count="3" />
+  </Tag>
+  <Tag type="Frame">
+    <property name="width" type="Integer" count="123" />
+    <property name="height" type="Integer" count="123" />
+    <property name="id" type="String" count="115" />
+    <property name="dockable" type="Boolean" count="104" />
+    <property name="statusBar" type="Boolean" count="117" />
+    <property name="name" type="String" count="122" />
+    <property name="text" type="String" count="80" />
+    <property name="items" type="Array" count="124" />
+    <property name="slave" type="Boolean" count="93" />
+    <property name="systemMenu" type="Boolean" count="69" />
+    <property name="visible" type="Boolean" count="4" />
+    <property name="clipSiblings" type="Boolean" count="3" />
+    <property name="x" type="Integer" count="8" />
+    <property name="y" type="Integer" count="8" />
+    <property name="accelerators" type="Array" count="7" />
+    <property name="category" type="String" count="5" Values="Activity,Batch,DataEntry,Finder,Parameter,Wizard" />
+    <property name="child" type="Boolean" count="2" />
+    <property name="size" type="String" count="2" Values="Micro,Mini,Standard,Large,Wide,AutoFill,Undefined" />
+    <property name="caption" type="Boolean" count="1" />
+    <property name="thickFrame" type="Boolean" count="1" />
+    <property name="modalFrame" type="Boolean" count="2" />
+  </Tag>
+  <Tag type="Toolbar">
+    <property name="id" type="String" count="220" />
+    <property name="items" type="Array" count="277" />
+    <property name="name" type="String" count="195" />
+    <property name="bottom" type="Boolean" count="132" />
+    <property name="text" type="String" count="15" />
+    <property name="useFormatMask" type="Boolean" count="1" />
+    <property name="environment" type="String" count="1" />
+    <property name="width" type="Integer" count="1" />
+    <property name="height" type="Integer" count="1" />
+  </Tag>
+  <Tag type="ToolbarButton">
+    <property name="default" type="Boolean" count="69" />
+    <property name="alignRight" type="Boolean" count="214" />
+    <property name="icon" type="String" count="789" />
+    <property name="id" type="String" count="829" />
+    <property name="name" type="String" count="789" />
+    <property name="text" type="String" count="707" />
+    <property name="hint" type="String" count="620" />
+    <property name="activation" type="String" count="75" />
+    <property name="environment" type="String" count="59" />
+    <property name="isDropdown" type="Boolean" count="76" />
+    <property name="isSeparator" type="Boolean" count="30" />
+    <property name="category" type="String" count="73" Values="Undefined,Edit,Navigation,Search,Print,Tools,Advanced,Radar,Fab,Exit,File,Bottom,DropDownButton" />
+    <property name="hints" type="String" count="3" />
+    <property name="items" type="Array" count="56" />
+    <property name="useFormatMask" type="Boolean" count="1" />
+    <property name="visible" type="Boolean" count="16" />
+    <property name="enabled" type="Boolean" count="6" />
+    <property name="beforeItem" type="String" count="1" />
+  </Tag>
+  <Tag type="View">
+    <property name="id" type="String" count="1178" />
+    <property name="text" type="String" count="625" />
+    <property name="child" type="Boolean" count="733" />
+    <property name="context" type="String" count="169" />
+    <property name="items" type="Array" count="916" />
+    <property name="name" type="String" count="965" />
+    <property name="height" type="Integer" count="217" />
+    <property name="width" type="Integer" count="218" />
+    <property name="tabStop" type="Boolean" count="20" />
+    <property name="overlapped" type="Boolean" count="2" />
+    <property name="bold" type="Boolean" count="22" />
+    <property name="italic" type="Boolean" count="22" />
+    <property name="underline" type="Boolean" count="22" />
+    <property name="thickFrame" type="Boolean" count="1" />
+    <property name="caption" type="Boolean" count="2" />
+    <property name="systemMenu" type="Boolean" count="1" />
+    <property name="ownerDraw" type="Boolean" count="1" />
+    <property name="iconType" type="String" count="1" />
+    <property name="icon" type="String" count="1" />
+    <property name="hScroll" type="Boolean" count="1" />
+    <property name="pinned" type="Boolean" count="2" />
+    <property name="layoutType" type="Integer" count="4" />
+    <property name="x" type="Integer" count="11" />
+    <property name="y" type="Integer" count="11" />
+  </Tag>
+  <Tag type="TileGroup">
+    <property name="id" type="String" count="1708" />
+    <property name="name" type="String" count="1662" />
+    <property name="items" type="Array" count="1572" />
+    <property name="layoutType" type="Integer" count="1624" />
+    <property name="clipChildren" type="Boolean" count="374" />
+    <property name="layoutAlign" type="Integer" count="291" />
+    <property name="flex" type="Integer" count="96" />
+    <property name="tileStyle" type="String" count="122" Values="None,Normal,Filter,Header,Footer,Wizard,Parameters,Batch" />
+    <property name="activation" type="String" count="84" />
+    <property name="text" type="String" count="624" />
+    <property name="icon" type="String" count="370" />
+    <property name="hint" type="String" count="321" />
+    <property name="ownerDraw" type="Boolean" count="10" />
+    <property name="hasPinnableTiles" type="Boolean" count="245" />
+    <property name="layoutType" type="String" count="107" />
+    <property name="height" type="Integer" count="188" />
+    <property name="width" type="Integer" count="189" />
+    <property name="showAsTile" type="Boolean" count="4" />
+    <property name="x" type="Integer" count="16" />
+    <property name="y" type="Integer" count="16" />
+    <property name="tooltip" type="String" count="87" />
+    <property name="layoutAlign" type="String" count="30" />
+    <property name="ownsPane" type="Boolean" count="12" />
+    <property name="collapsible" type="Boolean" count="12" />
+    <property name="environment" type="String" count="6" />
+    <property name="pinnable" type="Boolean" count="11" />
+    <property name="vertical" type="Boolean" count="1" />
+    <property name="name2" type="String" count="1" />
+    <property name="context" type="String" count="7" />
+    <property name="size" type="String" count="1" Values="Micro,Mini,Standard,Large,Wide,AutoFill,Undefined" />
+    <property name="toolbox" type="Boolean" count="1" />
+  </Tag>
+  <Tag type="Tile">
+    <property name="id" type="String" count="4646" />
+    <property name="name" type="String" count="4394" />
+    <property name="text" type="String" count="4146" />
+    <property name="size" type="String" count="3900" Values="Micro,Mini,Standard,Large,Wide,AutoFill,Undefined" />
+    <property name="hasTitle" type="Boolean" count="945" />
+    <property name="x" type="Integer" count="1450" />
+    <property name="y" type="Integer" count="1451" />
+    <property name="width" type="Integer" count="4554" />
+    <property name="height" type="Integer" count="4614" />
+    <property name="child" type="Boolean" count="1923" />
+    <property name="items" type="Array" count="3519" />
+    <property name="grid" type="String" count="3658" />
+    <property name="collapsible" type="Boolean" count="1124" />
+    <property name="hasStaticArea" type="Boolean" count="1860" />
+    <property name="overlapped" type="Boolean" count="430" />
+    <property name="pinnable" type="Boolean" count="1668" />
+    <property name="tileStyle" type="String" count="2179" Values="None,Normal,Filter,Header,Footer,Wizard,Parameters,Batch" />
+    <property name="flex" type="Integer" count="15" />
+    <property name="legend" type="Boolean" count="72" />
+    <property name="context" type="String" count="2124" />
+    <property name="collapsed" type="Boolean" count="321" />
+    <property name="tabStop" type="Boolean" count="78" />
+    <property name="customGrid" type="Boolean" count="187" />
+    <property name="pinned" type="Boolean" count="97" />
+    <property name="customGrid" type="String" count="1" />
+    <property name="activation" type="String" count="61" />
+    <property name="linksPanel" type="Boolean" count="1" />
+    <property name="panelLinksSource" type="String" count="1" />
+    <property name="exStyle" type="Integer" count="4" />
+    <property name="transparent" type="Boolean" count="199" />
+    <property name="useFormatMask" type="Boolean" count="3" />
+    <property name="marginLeft" type="Integer" count="2" />
+    <property name="minHeight" type="Integer" count="3" />
+    <property name="captionWidth" type="Integer" count="1" />
+    <property name="columns" type="String" count="22" />
+    <property name="navigationDetailsPanel" type="Boolean" count="1" />
+    <property name="panelNavigationDetailsSource" type="String" count="1" />
+    <property name="collapsedTitle" type="Boolean" count="1" />
+    <property name="systemMenu" type="Boolean" count="23" />
+    <property name="textAlign" type="String" count="4" Values="Left,Center,Right,Undefined" />
+    <property name="minValue" type="String" count="3" />
+    <property name="hastitle" type="Boolean" count="2" />
+    <property name="showAsTile" type="Boolean" count="1" />
+    <property name="ownerDraw" type="Boolean" count="1" />
+    <property name="linesPerRow" type="Integer" count="7" />
+    <property name="collapsedTitle" type="String" count="3" />
+    <property name="visible" type="Boolean" count="4" />
+    <property name="style" type="Integer" count="3" />
+    <property name="minValue" type="Integer" count="1" />
+    <property name="collapsibile" type="Boolean" count="2" />
+    <property name="controlCaption" type="String" count="4" />
+    <property name="hfill" type="Boolean" count="17" />
+    <property name="vfill" type="Boolean" count="17" />
+    <property name="group" type="Boolean" count="4" />
+    <property name="center" type="Boolean" count="1" />
+    <property name="enlargeLastStringColumn" type="Boolean" count="1" />
+    <property name="showFooterToolbar" type="Boolean" count="1" />
+    <property name="addRowEnabled" type="Boolean" count="1" />
+    <property name="insertRowEnabled" type="Boolean" count="1" />
+    <property name="deleteRowEnabled" type="Boolean" count="1" />
+    <property name="allowInsert" type="Boolean" count="1" />
+    <property name="allowDelete" type="Boolean" count="1" />
+    <property name="allowMultipleSel" type="Boolean" count="1" />
+  </Tag>
+  <Tag type="List">
+    <property name="id" type="String" count="52" />
+    <property name="anchor" type="String" count="31" />
+    <property name="width" type="Integer" count="52" />
+    <property name="height" type="Integer" count="52" />
+    <property name="tabStop" type="Boolean" count="36" />
+    <property name="vScroll" type="Boolean" count="49" />
+    <property name="noIntegralHeight" type="Boolean" count="52" />
+    <property name="controlClass" type="String" count="27" />
+    <property name="itemSource" type="Object" count="5">
+      <property name="allowChanges" type="Boolean" count="19" />
+      <property name="name" type="String" count="610" />
+      <property name="namespace" type="String" count="610" />
+      <property name="parameter" type="String" count="26" />
+      <property name="useProductLanguage" type="Boolean" count="26" />
+    </property>
+    <property name="binding" type="Object" count="19">
+      <property name="activation" type="String" count="27" />
+      <property name="buttonId" type="Integer" count="2017" />
+      <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+      <property name="controlClass" type="String" count="1" />
+      <property name="datasource" type="String" count="27152" />
+      <property name="enableAddOnFly" type="Boolean" count="1289" />
+      <property name="enableLink" type="Boolean" count="9" />
+      <property name="fields" type="Array" count="28" />
+      <property name="hotLink" type="Object" count="2053">
+        <property name="addOnFlyNamespace" type="String" count="13" />
+        <property name="autoFind" type="Boolean" count="2" />
+        <property name="auxKeys" type="Array" count="68" />
+        <property name="buttonId" type="Integer" count="2" />
+        <property name="enableAddOnFly" type="Boolean" count="777" />
+        <property name="enableHotLink" type="Boolean" count="6" />
+        <property name="enableLink" type="Boolean" count="14" />
+        <property name="fields" type="Array" count="27" />
+        <property name="inlineHotlinkDescription" type="String" count="583" />
+        <property name="items" type="Array" count="103" />
+        <property name="mustExistData" type="Boolean" count="1268" />
+        <property name="name" type="String" count="2053" />
+        <property name="namespace" type="String" count="1974" />
+        <property name="selector" type="String" count="103" />
+      </property>
+      <property name="hotLink" type="String" count="2659" />
+      <property name="hotLinkNS" type="String" count="2611" />
+      <property name="inlineHotlinkDescription" type="String" count="2" />
+      <property name="items" type="Array" count="49" />
+      <property name="minValue" type="Integer" count="1" />
+      <property name="mustExistData" type="Boolean" count="1642" />
+      <property name="selector" type="String" count="48" />
+    </property>
+    <property name="controlSize" type="Integer" count="33" />
+    <property name="captionSize" type="Integer" count="32" />
+    <property name="border" type="Boolean" count="20" />
+    <property name="hScroll" type="Boolean" count="32" />
+    <property name="hasStrings" type="Boolean" count="38" />
+    <property name="ownerDraw" type="Integer" count="21" />
+    <property name="controlBehaviour" type="Object" count="22">
+      <property name="commandHandler" type="Boolean" count="37" />
+      <property name="dataAdapter" type="Boolean" count="34" />
+      <property name="itemSource" type="Boolean" count="145" />
+      <property name="name" type="String" count="189" />
+      <property name="namespace" type="String" count="148" />
+      <property name="validator" type="Boolean" count="34" />
+    </property>
+    <property name="ownerDraw" type="String" count="7" />
+    <property name="x" type="Integer" count="20" />
+    <property name="y" type="Integer" count="20" />
+    <property name="style" type="Integer" count="7" />
+    <property name="sort" type="Boolean" count="24" />
+    <property name="selection" type="Integer" count="12" />
+    <property name="marginLeft" type="Integer" count="2" />
+    <property name="transparent" type="Boolean" count="17" />
+    <property name="wantKeyInput" type="Boolean" count="2" />
+    <property name="disableNoScroll" type="Boolean" count="1" />
+    <property name="selection" type="String" count="1" />
+  </Tag>
+  <Tag type="Constants">
+    <property name="items" type="Array" count="48" />
+  </Tag>
+  <Tag type="DockingPane">
+    <property name="id" type="String" count="9" />
+    <property name="text" type="String" count="9" />
+    <property name="name" type="String" count="9" />
+    <property name="iconType" type="String" count="9" />
+    <property name="icon" type="String" count="9" />
+    <property name="items" type="Array" count="9" />
+    <property name="width" type="Integer" count="8" />
+    <property name="activation" type="String" count="3" />
+  </Tag>
+  <Tag type="HeaderStrip">
+    <property name="id" type="String" count="84" />
+    <property name="binding" type="Object" count="67">
+      <property name="activation" type="String" count="27" />
+      <property name="buttonId" type="Integer" count="2017" />
+      <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+      <property name="controlClass" type="String" count="1" />
+      <property name="datasource" type="String" count="27152" />
+      <property name="enableAddOnFly" type="Boolean" count="1289" />
+      <property name="enableLink" type="Boolean" count="9" />
+      <property name="fields" type="Array" count="28" />
+      <property name="hotLink" type="Object" count="2053">
+        <property name="addOnFlyNamespace" type="String" count="13" />
+        <property name="autoFind" type="Boolean" count="2" />
+        <property name="auxKeys" type="Array" count="68" />
+        <property name="buttonId" type="Integer" count="2" />
+        <property name="enableAddOnFly" type="Boolean" count="777" />
+        <property name="enableHotLink" type="Boolean" count="6" />
+        <property name="enableLink" type="Boolean" count="14" />
+        <property name="fields" type="Array" count="27" />
+        <property name="inlineHotlinkDescription" type="String" count="583" />
+        <property name="items" type="Array" count="103" />
+        <property name="mustExistData" type="Boolean" count="1268" />
+        <property name="name" type="String" count="2053" />
+        <property name="namespace" type="String" count="1974" />
+        <property name="selector" type="String" count="103" />
+      </property>
+      <property name="hotLink" type="String" count="2659" />
+      <property name="hotLinkNS" type="String" count="2611" />
+      <property name="inlineHotlinkDescription" type="String" count="2" />
+      <property name="items" type="Array" count="49" />
+      <property name="minValue" type="Integer" count="1" />
+      <property name="mustExistData" type="Boolean" count="1642" />
+      <property name="selector" type="String" count="48" />
+    </property>
+    <property name="text" type="String" count="29" />
+    <property name="width" type="Integer" count="26" />
+    <property name="height" type="Integer" count="26" />
+    <property name="name" type="String" count="7" />
+    <property name="header" type="Boolean" count="3" />
+    <property name="layoutType" type="Integer" count="3" />
+    <property name="tileStyle" type="String" count="3" Values="None,Normal,Filter,Header,Footer,Wizard,Parameters,Batch" />
+    <property name="x" type="Integer" count="3" />
+    <property name="y" type="Integer" count="3" />
+  </Tag>
+  <Tag type="LayoutContainer">
+    <property name="environment" type="String" count="2" />
+    <property name="layoutType" type="Integer" count="454" />
+    <property name="collapsible" type="Boolean" count="207" />
+    <property name="items" type="Array" count="487" />
+    <property name="name" type="String" count="19" />
+    <property name="flex" type="Integer" count="6" />
+    <property name="id" type="String" count="65" />
+    <property name="activation" type="String" count="43" />
+    <property name="layoutAlign" type="Integer" count="55" />
+    <property name="layoutType" type="String" count="37" />
+    <property name="showAsTile" type="Boolean" count="9" />
+    <property name="collapsed" type="Boolean" count="14" />
+    <property name="text" type="String" count="3" />
+    <property name="layoutAlign" type="String" count="4" />
+    <property name="tileStyle" type="String" count="1" Values="None,Normal,Filter,Header,Footer,Wizard,Parameters,Batch" />
+    <property name="auto" type="Boolean" count="1" />
+  </Tag>
+  <Tag type="FilterGroup">
+    <property name="name" type="String" count="616" />
+    <property name="layoutType" type="Integer" count="616" />
+    <property name="layoutAlign" type="Integer" count="572" />
+    <property name="showAsTile" type="Boolean" count="570" />
+    <property name="items" type="Array" count="637" />
+    <property name="collapsible" type="Boolean" count="433" />
+    <property name="collapsed" type="Boolean" count="47" />
+    <property name="text" type="String" count="240" />
+    <property name="id" type="String" count="125" />
+    <property name="width" type="Integer" count="3" />
+    <property name="height" type="Integer" count="3" />
+    <property name="activation" type="String" count="12" />
+    <property name="environment" type="String" count="1" />
+    <property name="layoutType" type="String" count="18" />
+    <property name="layoutAlign" type="String" count="12" />
+    <property name="pinnable" type="Boolean" count="3" />
+    <property name="tileStyle" type="String" count="2" Values="None,Normal,Filter,Header,Footer,Wizard,Parameters,Batch" />
+    <property name="hasTitle" type="Boolean" count="3" />
+    <property name="size" type="String" count="1" Values="Micro,Mini,Standard,Large,Wide,AutoFill,Undefined" />
+    <property name="grid" type="String" count="1" />
+    <property name="hasPinnableTiles" type="Boolean" count="1" />
+  </Tag>
+  <Tag type="TileManager">
+    <property name="id" type="String" count="139" />
+    <property name="activation" type="String" count="2" />
+    <property name="name" type="String" count="129" />
+    <property name="items" type="Array" count="111" />
+    <property name="vertical" type="Boolean" count="28" />
+    <property name="x" type="Integer" count="7" />
+    <property name="y" type="Integer" count="7" />
+    <property name="hfill" type="Boolean" count="5" />
+    <property name="vfill" type="Boolean" count="5" />
+    <property name="width" type="Integer" count="28" />
+    <property name="height" type="Integer" count="28" />
+    <property name="text" type="String" count="19" />
+    <property name="showTabber" type="Boolean" count="2" />
+    <property name="clipChildren" type="Boolean" count="2" />
+    <property name="ownerDraw" type="Boolean" count="1" />
+    <property name="vertAlign" type="String" count="1" Values="Top,Center,Bottom,Undefined" />
+  </Tag>
+  <Tag type="Combo">
+    <property name="id" type="String" count="2740" />
+    <property name="controlClass" type="String" count="2632" />
+    <property name="binding" type="Object" count="2658">
+      <property name="activation" type="String" count="27" />
+      <property name="buttonId" type="Integer" count="2017" />
+      <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+      <property name="controlClass" type="String" count="1" />
+      <property name="datasource" type="String" count="27152" />
+      <property name="enableAddOnFly" type="Boolean" count="1289" />
+      <property name="enableLink" type="Boolean" count="9" />
+      <property name="fields" type="Array" count="28" />
+      <property name="hotLink" type="Object" count="2053">
+        <property name="addOnFlyNamespace" type="String" count="13" />
+        <property name="autoFind" type="Boolean" count="2" />
+        <property name="auxKeys" type="Array" count="68" />
+        <property name="buttonId" type="Integer" count="2" />
+        <property name="enableAddOnFly" type="Boolean" count="777" />
+        <property name="enableHotLink" type="Boolean" count="6" />
+        <property name="enableLink" type="Boolean" count="14" />
+        <property name="fields" type="Array" count="27" />
+        <property name="inlineHotlinkDescription" type="String" count="583" />
+        <property name="items" type="Array" count="103" />
+        <property name="mustExistData" type="Boolean" count="1268" />
+        <property name="name" type="String" count="2053" />
+        <property name="namespace" type="String" count="1974" />
+        <property name="selector" type="String" count="103" />
+      </property>
+      <property name="hotLink" type="String" count="2659" />
+      <property name="hotLinkNS" type="String" count="2611" />
+      <property name="inlineHotlinkDescription" type="String" count="2" />
+      <property name="items" type="Array" count="49" />
+      <property name="minValue" type="Integer" count="1" />
+      <property name="mustExistData" type="Boolean" count="1642" />
+      <property name="selector" type="String" count="48" />
+    </property>
+    <property name="width" type="Integer" count="2739" />
+    <property name="height" type="Integer" count="2740" />
+    <property name="tabStop" type="Boolean" count="1109" />
+    <property name="vScroll" type="Boolean" count="2559" />
+    <property name="comboType" type="String" count="1886" Values="Simple,DropDown,DropDownList" />
+    <property name="sort" type="Boolean" count="1769" />
+    <property name="auto" type="Boolean" count="1395" />
+    <property name="controlCaption" type="String" count="2369" />
+    <property name="anchor" type="String" count="2685" />
+    <property name="captionSize" type="Integer" count="2649" />
+    <property name="controlSize" type="Integer" count="2648" />
+    <property name="stateData" type="Object" count="23">
+      <property name="binding" type="Object" count="224">
+        <property name="activation" type="String" count="27" />
+        <property name="buttonId" type="Integer" count="2017" />
+        <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+        <property name="controlClass" type="String" count="1" />
+        <property name="datasource" type="String" count="27152" />
+        <property name="enableAddOnFly" type="Boolean" count="1289" />
+        <property name="enableLink" type="Boolean" count="9" />
+        <property name="fields" type="Array" count="28" />
+        <property name="hotLink" type="Object" count="2053">
+          <property name="addOnFlyNamespace" type="String" count="13" />
+          <property name="autoFind" type="Boolean" count="2" />
+          <property name="auxKeys" type="Array" count="68" />
+          <property name="buttonId" type="Integer" count="2" />
+          <property name="enableAddOnFly" type="Boolean" count="777" />
+          <property name="enableHotLink" type="Boolean" count="6" />
+          <property name="enableLink" type="Boolean" count="14" />
+          <property name="fields" type="Array" count="27" />
+          <property name="inlineHotlinkDescription" type="String" count="583" />
+          <property name="items" type="Array" count="103" />
+          <property name="mustExistData" type="Boolean" count="1268" />
+          <property name="name" type="String" count="2053" />
+          <property name="namespace" type="String" count="1974" />
+          <property name="selector" type="String" count="103" />
+        </property>
+        <property name="hotLink" type="String" count="2659" />
+        <property name="hotLinkNS" type="String" count="2611" />
+        <property name="inlineHotlinkDescription" type="String" count="2" />
+        <property name="items" type="Array" count="49" />
+        <property name="minValue" type="Integer" count="1" />
+        <property name="mustExistData" type="Boolean" count="1642" />
+        <property name="selector" type="String" count="48" />
+      </property>
+      <property name="invertState" type="Boolean" count="208" />
+    </property>
+    <property name="marginLeft" type="Integer" count="518" />
+    <property name="activation" type="String" count="586" />
+    <property name="controlStyle" type="String" count="12" />
+    <property name="textLimit" type="Integer" count="5" />
+    <property name="itemSource" type="Object" count="460">
+      <property name="allowChanges" type="Boolean" count="19" />
+      <property name="name" type="String" count="610" />
+      <property name="namespace" type="String" count="610" />
+      <property name="parameter" type="String" count="26" />
+      <property name="useProductLanguage" type="Boolean" count="26" />
+    </property>
+    <property name="controlBehaviour" type="Object" count="75">
+      <property name="commandHandler" type="Boolean" count="37" />
+      <property name="dataAdapter" type="Boolean" count="34" />
+      <property name="itemSource" type="Boolean" count="145" />
+      <property name="name" type="String" count="189" />
+      <property name="namespace" type="String" count="148" />
+      <property name="validator" type="Boolean" count="34" />
+    </property>
+    <property name="name" type="String" count="500" />
+    <property name="customSize" type="Boolean" count="183" />
+    <property name="column" type="String" count="104" />
+    <property name="captionAlign" type="String" count="65" />
+    <property name="captionWidth" type="Integer" count="86" />
+    <property name="validators" type="Array" count="5" />
+    <property name="group" type="Boolean" count="34" />
+    <property name="textAlign" type="String" count="36" Values="Left,Center,Right,Undefined" />
+    <property name="autoHScroll" type="Boolean" count="50" />
+    <property name="chars" type="Integer" count="9" />
+    <property name="environment" type="String" count="23" />
+    <property name="x" type="Integer" count="49" />
+    <property name="y" type="Integer" count="49" />
+    <property name="border" type="Boolean" count="15" />
+    <property name="captionFont" type="Object" count="1">
+      <property name="bold" type="Boolean" count="65" />
+      <property name="italic" type="Boolean" count="96" />
+    </property>
+    <property name="rows" type="Integer" count="3" />
+    <property name="enabled" type="Boolean" count="1" />
+    <property name="visible" type="Boolean" count="3" />
+    <property name="noPrefix" type="Boolean" count="7" />
+    <property name="showCode" type="Boolean" count="1" />
+    <property name="actionData" type="Object" count="1">
+      <property name="activation" type="String" count="38" />
+      <property name="binding" type="Object" count="10">
+        <property name="activation" type="String" count="27" />
+        <property name="buttonId" type="Integer" count="2017" />
+        <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+        <property name="controlClass" type="String" count="1" />
+        <property name="datasource" type="String" count="27152" />
+        <property name="enableAddOnFly" type="Boolean" count="1289" />
+        <property name="enableLink" type="Boolean" count="9" />
+        <property name="fields" type="Array" count="28" />
+        <property name="hotLink" type="Object" count="2053">
+          <property name="addOnFlyNamespace" type="String" count="13" />
+          <property name="autoFind" type="Boolean" count="2" />
+          <property name="auxKeys" type="Array" count="68" />
+          <property name="buttonId" type="Integer" count="2" />
+          <property name="enableAddOnFly" type="Boolean" count="777" />
+          <property name="enableHotLink" type="Boolean" count="6" />
+          <property name="enableLink" type="Boolean" count="14" />
+          <property name="fields" type="Array" count="27" />
+          <property name="inlineHotlinkDescription" type="String" count="583" />
+          <property name="items" type="Array" count="103" />
+          <property name="mustExistData" type="Boolean" count="1268" />
+          <property name="name" type="String" count="2053" />
+          <property name="namespace" type="String" count="1974" />
+          <property name="selector" type="String" count="103" />
+        </property>
+        <property name="hotLink" type="String" count="2659" />
+        <property name="hotLinkNS" type="String" count="2611" />
+        <property name="inlineHotlinkDescription" type="String" count="2" />
+        <property name="items" type="Array" count="49" />
+        <property name="minValue" type="Integer" count="1" />
+        <property name="mustExistData" type="Boolean" count="1642" />
+        <property name="selector" type="String" count="48" />
+      </property>
+      <property name="command" type="String" count="63" />
+      <property name="enabledInBrowse" type="Boolean" count="47" />
+      <property name="hint" type="String" count="50" />
+      <property name="icon" type="String" count="52" />
+    </property>
+    <property name="oemConvert" type="Boolean" count="2" />
+    <property name="maxValue" type="String" count="8" />
+    <property name="minValue" type="String" count="8" />
+    <property name="minValue" type="Integer" count="6" />
+    <property name="maxValue" type="Integer" count="6" />
+    <property name="ownerDraw" type="Boolean" count="1" />
+    <property name="upperCase" type="Boolean" count="13" />
+    <property name="enableAddOnFly" type="Boolean" count="1" />
+    <property name="display" type="String" count="1" />
+    <property name="captionVerticalAlign" type="String" count="9" />
+    <property name="multiline" type="Boolean" count="5" />
+    <property name="hfill" type="Boolean" count="4" />
+    <property name="vfill" type="Boolean" count="4" />
+    <property name="labelOnLeft" type="Boolean" count="4" />
+    <property name="text" type="String" count="1" />
+    <property name="beforeItem" type="String" count="1" />
+    <property name="autoVScroll" type="Boolean" count="7" />
+    <property name="vertAlign" type="String" count="1" Values="Top,Center,Bottom,Undefined" />
+  </Tag>
+  <Tag type="BodyEdit">
+    <property name="id" type="String" count="783" />
+    <property name="x" type="Integer" count="156" />
+    <property name="y" type="Integer" count="156" />
+    <property name="width" type="Integer" count="747" />
+    <property name="height" type="Integer" count="747" />
+    <property name="clipChildren" type="Boolean" count="456" />
+    <property name="ownerDraw" type="Boolean" count="454" />
+    <property name="showHeaderToolbar" type="Boolean" count="348" />
+    <property name="showStatusBar" type="Boolean" count="269" />
+    <property name="name" type="String" count="696" />
+    <property name="text" type="String" count="640" />
+    <property name="binding" type="Object" count="747">
+      <property name="activation" type="String" count="27" />
+      <property name="buttonId" type="Integer" count="2017" />
+      <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+      <property name="controlClass" type="String" count="1" />
+      <property name="datasource" type="String" count="27152" />
+      <property name="enableAddOnFly" type="Boolean" count="1289" />
+      <property name="enableLink" type="Boolean" count="9" />
+      <property name="fields" type="Array" count="28" />
+      <property name="hotLink" type="Object" count="2053">
+        <property name="addOnFlyNamespace" type="String" count="13" />
+        <property name="autoFind" type="Boolean" count="2" />
+        <property name="auxKeys" type="Array" count="68" />
+        <property name="buttonId" type="Integer" count="2" />
+        <property name="enableAddOnFly" type="Boolean" count="777" />
+        <property name="enableHotLink" type="Boolean" count="6" />
+        <property name="enableLink" type="Boolean" count="14" />
+        <property name="fields" type="Array" count="27" />
+        <property name="inlineHotlinkDescription" type="String" count="583" />
+        <property name="items" type="Array" count="103" />
+        <property name="mustExistData" type="Boolean" count="1268" />
+        <property name="name" type="String" count="2053" />
+        <property name="namespace" type="String" count="1974" />
+        <property name="selector" type="String" count="103" />
+      </property>
+      <property name="hotLink" type="String" count="2659" />
+      <property name="hotLinkNS" type="String" count="2611" />
+      <property name="inlineHotlinkDescription" type="String" count="2" />
+      <property name="items" type="Array" count="49" />
+      <property name="minValue" type="Integer" count="1" />
+      <property name="mustExistData" type="Boolean" count="1642" />
+      <property name="selector" type="String" count="48" />
+    </property>
+    <property name="rowView" type="String" count="127" />
+    <property name="anchor" type="String" count="535" />
+    <property name="allowInsert" type="Boolean" count="369" />
+    <property name="allowDelete" type="Boolean" count="343" />
+    <property name="dblClickEnabled" type="Boolean" count="51" />
+    <property name="items" type="Array" count="458" />
+    <property name="enlargeLastStringColumn" type="Boolean" count="160" />
+    <property name="showFooterToolbar" type="Boolean" count="164" />
+    <property name="addRowEnabled" type="Boolean" count="326" />
+    <property name="insertRowEnabled" type="Boolean" count="264" />
+    <property name="deleteRowEnabled" type="Boolean" count="242" />
+    <property name="allowCallDialog" type="Boolean" count="186" />
+    <property name="showHorizLines" type="Boolean" count="62" />
+    <property name="allowOrdering" type="Boolean" count="186" />
+    <property name="linesPerRow" type="Integer" count="127" />
+    <property name="selectionColumn" type="Boolean" count="135" />
+    <property name="selectionColumnField" type="String" count="133" />
+    <property name="enlargeAllStringColumns" type="Boolean" count="166" />
+    <property name="showDataTip" type="Boolean" count="262" />
+    <property name="allowSearch" type="Boolean" count="50" />
+    <property name="allowMultipleSel" type="Boolean" count="146" />
+    <property name="showAlternateColor" type="Boolean" count="6" />
+    <property name="enlargeLastColumn" type="Boolean" count="73" />
+    <property name="showVertLines" type="Boolean" count="8" />
+    <property name="showColumnHeaders" type="Boolean" count="11" />
+    <property name="allowOrderingOnBrowse" type="Boolean" count="74" />
+    <property name="allowOrderingOnEdit" type="Boolean" count="65" />
+    <property name="controlClass" type="String" count="138" />
+    <property name="showVertScrollbar" type="Boolean" count="3" />
+    <property name="showHorizScrollbar" type="Boolean" count="4" />
+    <property name="showHorizLines" type="String" count="1" />
+    <property name="showVertLines" type="String" count="1" />
+    <property name="environment" type="String" count="16" />
+    <property name="titleRows" type="Float" count="6" />
+    <property name="size" type="String" count="15" Values="Micro,Mini,Standard,Large,Wide,AutoFill,Undefined" />
+    <property name="activation" type="String" count="11" />
+    <property name="useFormatMask" type="Boolean" count="18" />
+    <property name="vertAlign" type="String" count="8" Values="Top,Center,Bottom,Undefined" />
+    <property name="showBorders" type="Boolean" count="1" />
+    <property name="enlargeCustom" type="Boolean" count="8" />
+    <property name="allowDrag" type="Boolean" count="1" />
+    <property name="tabStop" type="Boolean" count="15" />
+    <property name="maxRecords" type="Integer" count="1" />
+    <property name="allowRemoveColumnInteractive" type="Boolean" count="1" />
+    <property name="marginLeft" type="Integer" count="2" />
+    <property name="acnhor" type="String" count="1" />
+    <property name="multiline" type="Boolean" count="3" />
+    <property name="collapsible" type="Boolean" count="7" />
+    <property name="collapsed" type="Boolean" count="5" />
+    <property name="enabled" type="Boolean" count="2" />
+    <property name="enlargeAllStringcolumns" type="Boolean" count="1" />
+    <property name="hfill" type="Boolean" count="2" />
+    <property name="vfill" type="Boolean" count="2" />
+    <property name="textAlign" type="String" count="2" Values="Left,Center,Right,Undefined" />
+    <property name="noTooltips" type="Boolean" count="4" />
+    <property name="allowColumnLock" type="Boolean" count="1" />
+    <property name="allowColumnLockInteractive" type="Boolean" count="1" />
+  </Tag>
+  <Tag type="MenuItem">
+    <property name="icon" type="String" count="7" />
+    <property name="id" type="String" count="247" />
+    <property name="name" type="String" count="29" />
+    <property name="text" type="String" count="241" />
+    <property name="activation" type="String" count="110" />
+    <property name="isSeparator" type="Boolean" count="4" />
+  </Tag>
+  <Tag type="ColTitle">
+    <property name="text" type="String" count="7914" />
+    <property name="blackFrame" type="Boolean" count="46" />
+    <property name="id" type="String" count="8538" />
+    <property name="binding" type="Object" count="6748">
+      <property name="activation" type="String" count="27" />
+      <property name="buttonId" type="Integer" count="2017" />
+      <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+      <property name="controlClass" type="String" count="1" />
+      <property name="datasource" type="String" count="27152" />
+      <property name="enableAddOnFly" type="Boolean" count="1289" />
+      <property name="enableLink" type="Boolean" count="9" />
+      <property name="fields" type="Array" count="28" />
+      <property name="hotLink" type="Object" count="2053">
+        <property name="addOnFlyNamespace" type="String" count="13" />
+        <property name="autoFind" type="Boolean" count="2" />
+        <property name="auxKeys" type="Array" count="68" />
+        <property name="buttonId" type="Integer" count="2" />
+        <property name="enableAddOnFly" type="Boolean" count="777" />
+        <property name="enableHotLink" type="Boolean" count="6" />
+        <property name="enableLink" type="Boolean" count="14" />
+        <property name="fields" type="Array" count="27" />
+        <property name="inlineHotlinkDescription" type="String" count="583" />
+        <property name="items" type="Array" count="103" />
+        <property name="mustExistData" type="Boolean" count="1268" />
+        <property name="name" type="String" count="2053" />
+        <property name="namespace" type="String" count="1974" />
+        <property name="selector" type="String" count="103" />
+      </property>
+      <property name="hotLink" type="String" count="2659" />
+      <property name="hotLinkNS" type="String" count="2611" />
+      <property name="inlineHotlinkDescription" type="String" count="2" />
+      <property name="items" type="Array" count="49" />
+      <property name="minValue" type="Integer" count="1" />
+      <property name="mustExistData" type="Boolean" count="1642" />
+      <property name="selector" type="String" count="48" />
+    </property>
+    <property name="controlClass" type="String" count="6787" />
+    <property name="activation" type="String" count="1766" />
+    <property name="name" type="String" count="6636" />
+    <property name="rows" type="Integer" count="625" />
+    <property name="hidden" type="Boolean" count="700" />
+    <property name="grayed" type="Boolean" count="796" />
+    <property name="hasFooter" type="Boolean" count="185" />
+    <property name="minValue" type="Integer" count="71" />
+    <property name="width" type="Integer" count="402" />
+    <property name="controlBehaviour" type="Object" count="7">
+      <property name="commandHandler" type="Boolean" count="37" />
+      <property name="dataAdapter" type="Boolean" count="34" />
+      <property name="itemSource" type="Boolean" count="145" />
+      <property name="name" type="String" count="189" />
+      <property name="namespace" type="String" count="148" />
+      <property name="validator" type="Boolean" count="34" />
+    </property>
+    <property name="noChangeGrayed" type="Boolean" count="339" />
+    <property name="selector" type="Object" count="15">
+      <property name="address" type="String" count="49" />
+      <property name="city" type="String" count="49" />
+      <property name="companyName" type="String" count="17" />
+      <property name="contact" type="String" count="2" />
+      <property name="country" type="String" count="29" />
+      <property name="county" type="String" count="49" />
+      <property name="discount1" type="String" count="2" />
+      <property name="discount2" type="String" count="2" />
+      <property name="exempt" type="String" count="6" />
+      <property name="federal" type="String" count="21" />
+      <property name="inactiveSubject" type="String" count="2" />
+      <property name="isoCode" type="String" count="81" />
+      <property name="kind" type="String" count="6" />
+      <property name="latitude" type="String" count="15" />
+      <property name="longitude" type="String" count="15" />
+      <property name="naturalPerson" type="String" count="9" />
+      <property name="region" type="String" count="19" />
+      <property name="splitTax" type="String" count="2" />
+      <property name="splitTaxIBAN" type="String" count="2" />
+      <property name="streetNo" type="String" count="27" />
+      <property name="suspendedTax" type="String" count="3" />
+      <property name="taxIdType" type="String" count="6" />
+      <property name="zipCode" type="String" count="32" />
+    </property>
+    <property name="chars" type="Integer" count="516" />
+    <property name="environment" type="String" count="30" />
+    <property name="itemSource" type="Object" count="98">
+      <property name="allowChanges" type="Boolean" count="19" />
+      <property name="name" type="String" count="610" />
+      <property name="namespace" type="String" count="610" />
+      <property name="parameter" type="String" count="26" />
+      <property name="useProductLanguage" type="Boolean" count="26" />
+    </property>
+    <property name="sort" type="Boolean" count="51" />
+    <property name="textLimit" type="Integer" count="1" />
+    <property name="namespaceType" type="String" count="24" />
+    <property name="maxValue" type="Integer" count="27" />
+    <property name="masterType" type="String" count="12" />
+    <property name="useFormatMask" type="Boolean" count="12" />
+    <property name="minValue" type="String" count="18" />
+    <property name="numberDecimal" type="Integer" count="11" />
+    <property name="comboType" type="String" count="98" Values="Simple,DropDown,DropDownList" />
+    <property name="multiline" type="Boolean" count="3" />
+    <property name="wantReturn" type="Boolean" count="2" />
+    <property name="autoVScroll" type="Boolean" count="2" />
+    <property name="vScroll" type="Boolean" count="13" />
+    <property name="controlStyle" type="String" count="11" />
+    <property name="height" type="Integer" count="106" />
+    <property name="tabStop" type="Boolean" count="5" />
+    <property name="border" type="Boolean" count="1" />
+    <property name="hotLink" type="String" count="1" />
+    <property name="isDropdown" type="Boolean" count="13" />
+    <property name="hasButtons" type="Boolean" count="1" />
+    <property name="upperCase" type="Boolean" count="6" />
+    <property name="ledgerImputable" type="Boolean" count="4" />
+    <property name="numberer" type="Object" count="26">
+      <property name="enableCtrlInEdit" type="String" count="1" />
+      <property name="enableCtrlInEdit" type="Boolean" count="15" />
+      <property name="serviceName" type="String" count="84" />
+      <property name="serviceNs" type="String" count="272" />
+      <property name="useFormatMask" type="Boolean" count="14" />
+    </property>
+    <property name="enableLink" type="Boolean" count="1" />
+    <property name="maxValue" type="String" count="16" />
+    <property name="menu" type="Object" count="1">
+      <property name="items" type="Array" count="3" />
+    </property>
+    <property name="minValue" type="Float" count="1" />
+    <property name="maxValue" type="Float" count="1" />
+    <property name="noChangeHidden" type="Boolean" count="1" />
+    <property name="group" type="Boolean" count="8" />
+    <property name="autoHScroll" type="Boolean" count="4" />
+    <property name="stateData" type="Object" count="3">
+      <property name="binding" type="Object" count="224">
+        <property name="activation" type="String" count="27" />
+        <property name="buttonId" type="Integer" count="2017" />
+        <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+        <property name="controlClass" type="String" count="1" />
+        <property name="datasource" type="String" count="27152" />
+        <property name="enableAddOnFly" type="Boolean" count="1289" />
+        <property name="enableLink" type="Boolean" count="9" />
+        <property name="fields" type="Array" count="28" />
+        <property name="hotLink" type="Object" count="2053">
+          <property name="addOnFlyNamespace" type="String" count="13" />
+          <property name="autoFind" type="Boolean" count="2" />
+          <property name="auxKeys" type="Array" count="68" />
+          <property name="buttonId" type="Integer" count="2" />
+          <property name="enableAddOnFly" type="Boolean" count="777" />
+          <property name="enableHotLink" type="Boolean" count="6" />
+          <property name="enableLink" type="Boolean" count="14" />
+          <property name="fields" type="Array" count="27" />
+          <property name="inlineHotlinkDescription" type="String" count="583" />
+          <property name="items" type="Array" count="103" />
+          <property name="mustExistData" type="Boolean" count="1268" />
+          <property name="name" type="String" count="2053" />
+          <property name="namespace" type="String" count="1974" />
+          <property name="selector" type="String" count="103" />
+        </property>
+        <property name="hotLink" type="String" count="2659" />
+        <property name="hotLinkNS" type="String" count="2611" />
+        <property name="inlineHotlinkDescription" type="String" count="2" />
+        <property name="items" type="Array" count="49" />
+        <property name="minValue" type="Integer" count="1" />
+        <property name="mustExistData" type="Boolean" count="1642" />
+        <property name="selector" type="String" count="48" />
+      </property>
+      <property name="invertState" type="Boolean" count="208" />
+    </property>
+    <property name="grayed" type="Integer" count="1" />
+    <property name="backgroundColor" type="String" count="1" />
+    <property name="textColor" type="String" count="1" />
+    <property name="buttonId" type="Integer" count="3" />
+    <property name="noPrefix" type="Boolean" count="1" />
+    <property name="textAlign" type="String" count="2" Values="Left,Center,Right,Undefined" />
+    <property name="hfill" type="Boolean" count="7" />
+    <property name="vfill" type="Boolean" count="6" />
+    <property name="blackframe" type="Boolean" count="3" />
+    <property name="beforeItem" type="String" count="36" />
+    <property name="allowEnlarge" type="Boolean" count="5" />
+    <property name="visible" type="Boolean" count="1" />
+    <property name="auto" type="Boolean" count="1" />
+    <property name="editable" type="String" count="1" />
+    <property name="style" type="Integer" count="4" />
+  </Tag>
+  <Tag type="PropertyGrid">
+    <property name="id" type="String" count="126" />
+    <property name="x" type="Integer" count="47" />
+    <property name="y" type="Integer" count="47" />
+    <property name="width" type="Integer" count="126" />
+    <property name="height" type="Integer" count="126" />
+    <property name="visible" type="Boolean" count="110" />
+    <property name="tabStop" type="Boolean" count="105" />
+    <property name="blackFrame" type="Boolean" count="105" />
+    <property name="name" type="String" count="106" />
+    <property name="items" type="Array" count="98" />
+    <property name="group" type="Boolean" count="11" />
+    <property name="anchor" type="String" count="48" />
+    <property name="blackRect" type="Boolean" count="3" />
+    <property name="grayRect" type="Boolean" count="3" />
+    <property name="icon" type="Boolean" count="3" />
+    <property name="multiline" type="Boolean" count="3" />
+    <property name="textAlign" type="String" count="6" Values="Left,Center,Right,Undefined" />
+    <property name="whiteRect" type="Boolean" count="3" />
+    <property name="clipChildren" type="Boolean" count="1" />
+    <property name="controlClass" type="String" count="2" />
+  </Tag>
+  <Tag type="PropertyGridItem">
+    <property name="name" type="String" count="1706" />
+    <property name="text" type="String" count="2668" />
+    <property name="hint" type="String" count="2663" />
+    <property name="items" type="Array" count="518" />
+    <property name="id" type="String" count="2269" />
+    <property name="controlClass" type="String" count="2100" />
+    <property name="binding" type="Object" count="2081">
+      <property name="activation" type="String" count="27" />
+      <property name="buttonId" type="Integer" count="2017" />
+      <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+      <property name="controlClass" type="String" count="1" />
+      <property name="datasource" type="String" count="27152" />
+      <property name="enableAddOnFly" type="Boolean" count="1289" />
+      <property name="enableLink" type="Boolean" count="9" />
+      <property name="fields" type="Array" count="28" />
+      <property name="hotLink" type="Object" count="2053">
+        <property name="addOnFlyNamespace" type="String" count="13" />
+        <property name="autoFind" type="Boolean" count="2" />
+        <property name="auxKeys" type="Array" count="68" />
+        <property name="buttonId" type="Integer" count="2" />
+        <property name="enableAddOnFly" type="Boolean" count="777" />
+        <property name="enableHotLink" type="Boolean" count="6" />
+        <property name="enableLink" type="Boolean" count="14" />
+        <property name="fields" type="Array" count="27" />
+        <property name="inlineHotlinkDescription" type="String" count="583" />
+        <property name="items" type="Array" count="103" />
+        <property name="mustExistData" type="Boolean" count="1268" />
+        <property name="name" type="String" count="2053" />
+        <property name="namespace" type="String" count="1974" />
+        <property name="selector" type="String" count="103" />
+      </property>
+      <property name="hotLink" type="String" count="2659" />
+      <property name="hotLinkNS" type="String" count="2611" />
+      <property name="inlineHotlinkDescription" type="String" count="2" />
+      <property name="items" type="Array" count="49" />
+      <property name="minValue" type="Integer" count="1" />
+      <property name="mustExistData" type="Boolean" count="1642" />
+      <property name="selector" type="String" count="48" />
+    </property>
+    <property name="controlBehaviour" type="Object" count="70">
+      <property name="commandHandler" type="Boolean" count="37" />
+      <property name="dataAdapter" type="Boolean" count="34" />
+      <property name="itemSource" type="Boolean" count="145" />
+      <property name="name" type="String" count="189" />
+      <property name="namespace" type="String" count="148" />
+      <property name="validator" type="Boolean" count="34" />
+    </property>
+    <property name="itemSource" type="Object" count="49">
+      <property name="allowChanges" type="Boolean" count="19" />
+      <property name="name" type="String" count="610" />
+      <property name="namespace" type="String" count="610" />
+      <property name="parameter" type="String" count="26" />
+      <property name="useProductLanguage" type="Boolean" count="26" />
+    </property>
+    <property name="sort" type="Boolean" count="25" />
+    <property name="activation" type="String" count="761" />
+    <property name="ledgerImputable" type="Boolean" count="3" />
+    <property name="ledgerImputable" type="String" count="3" />
+    <property name="controlSize" type="Integer" count="150" />
+    <property name="captionSize" type="Integer" count="149" />
+    <property name="customSize" type="Boolean" count="150" />
+    <property name="rows" type="Integer" count="6" />
+    <property name="multiline" type="Boolean" count="5" />
+    <property name="minValue" type="Integer" count="43" />
+    <property name="maxValue" type="Integer" count="21" />
+    <property name="environment" type="String" count="20" />
+    <property name="namespaceType" type="String" count="12" />
+    <property name="controlStyle" type="String" count="25" />
+    <property name="collapsed" type="Boolean" count="37" />
+    <property name="textLimit" type="Integer" count="5" />
+    <property name="maxValue" type="String" count="2" />
+    <property name="minValue" type="String" count="5" />
+    <property name="comboType" type="String" count="117" Values="Simple,DropDown,DropDownList" />
+    <property name="password" type="Boolean" count="3" />
+    <property name="auto" type="Boolean" count="17" />
+    <property name="anchor" type="String" count="1" />
+    <property name="numberDecimal" type="Integer" count="3" />
+    <property name="masterType" type="String" count="1" />
+    <property name="beforeItem" type="String" count="1" />
+    <property name="readOnly" type="Boolean" count="1" />
+    <property name="enabled" type="Boolean" count="4" />
+  </Tag>
+  <Tag type="StatusTilePanel">
+    <property name="name" type="String" count="17" />
+    <property name="items" type="Array" count="17" />
+    <property name="id" type="String" count="7" />
+  </Tag>
+  <Tag type="TilePanel">
+    <property name="layoutType" type="Integer" count="55" />
+    <property name="name" type="String" count="58" />
+    <property name="text" type="String" count="36" />
+    <property name="showAsTile" type="Boolean" count="55" />
+    <property name="collapsible" type="Boolean" count="17" />
+    <property name="items" type="Array" count="62" />
+    <property name="id" type="String" count="16" />
+    <property name="flex" type="Integer" count="7" />
+    <property name="layoutType" type="String" count="5" />
+    <property name="activation" type="String" count="11" />
+    <property name="layoutAlign" type="Integer" count="8" />
+    <property name="size" type="String" count="20" Values="Micro,Mini,Standard,Large,Wide,AutoFill,Undefined" />
+    <property name="environment" type="String" count="6" />
+    <property name="collapsed" type="Boolean" count="2" />
+  </Tag>
+  <Tag type="ProgressStatusTile">
+    <property name="name" type="String" count="18" />
+    <property name="id" type="String" count="19" />
+    <property name="title" type="String" count="14" />
+    <property name="icon" type="String" count="15" />
+    <property name="clickable" type="Boolean" count="2" />
+    <property name="x" type="Integer" count="1" />
+    <property name="y" type="Integer" count="1" />
+    <property name="width" type="Integer" count="1" />
+    <property name="height" type="Integer" count="1" />
+    <property name="child" type="Boolean" count="1" />
+    <property name="context" type="String" count="4" />
+    <property name="size" type="String" count="1" Values="Micro,Mini,Standard,Large,Wide,AutoFill,Undefined" />
+    <property name="items" type="Array" count="1" />
+    <property name="statusColor" type="String" count="1" />
+  </Tag>
+  <Tag type="TreeAdv">
+    <property name="controlClass" type="String" count="10" />
+    <property name="id" type="String" count="10" />
+    <property name="name" type="String" count="6" />
+    <property name="text" type="String" count="5" />
+    <property name="x" type="Integer" count="3" />
+    <property name="y" type="Integer" count="3" />
+    <property name="width" type="Integer" count="10" />
+    <property name="height" type="Integer" count="10" />
+    <property name="border" type="Boolean" count="7" />
+    <property name="textAlign" type="String" count="2" Values="Left,Center,Right,Undefined" />
+    <property name="enlargeAllStringColumns" type="Boolean" count="1" />
+    <property name="anchor" type="String" count="3" />
+    <property name="hScroll" type="Boolean" count="3" />
+    <property name="disableDragDrop" type="Boolean" count="3" />
+    <property name="hasButtons" type="Boolean" count="3" />
+    <property name="hasLines" type="Boolean" count="3" />
+    <property name="linesAtRoot" type="Boolean" count="3" />
+    <property name="alwaysShowSelection" type="Boolean" count="3" />
+    <property name="binding" type="Object" count="2">
+      <property name="activation" type="String" count="27" />
+      <property name="buttonId" type="Integer" count="2017" />
+      <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+      <property name="controlClass" type="String" count="1" />
+      <property name="datasource" type="String" count="27152" />
+      <property name="enableAddOnFly" type="Boolean" count="1289" />
+      <property name="enableLink" type="Boolean" count="9" />
+      <property name="fields" type="Array" count="28" />
+      <property name="hotLink" type="Object" count="2053">
+        <property name="addOnFlyNamespace" type="String" count="13" />
+        <property name="autoFind" type="Boolean" count="2" />
+        <property name="auxKeys" type="Array" count="68" />
+        <property name="buttonId" type="Integer" count="2" />
+        <property name="enableAddOnFly" type="Boolean" count="777" />
+        <property name="enableHotLink" type="Boolean" count="6" />
+        <property name="enableLink" type="Boolean" count="14" />
+        <property name="fields" type="Array" count="27" />
+        <property name="inlineHotlinkDescription" type="String" count="583" />
+        <property name="items" type="Array" count="103" />
+        <property name="mustExistData" type="Boolean" count="1268" />
+        <property name="name" type="String" count="2053" />
+        <property name="namespace" type="String" count="1974" />
+        <property name="selector" type="String" count="103" />
+      </property>
+      <property name="hotLink" type="String" count="2659" />
+      <property name="hotLinkNS" type="String" count="2611" />
+      <property name="inlineHotlinkDescription" type="String" count="2" />
+      <property name="items" type="Array" count="49" />
+      <property name="minValue" type="Integer" count="1" />
+      <property name="mustExistData" type="Boolean" count="1642" />
+      <property name="selector" type="String" count="48" />
+    </property>
+    <property name="marginLeft" type="Integer" count="1" />
+  </Tag>
+  <Tag type="WizardStep">
+    <property name="activation" type="String" count="4" />
+    <property name="id" type="String" count="153" />
+    <property name="name" type="String" count="106" />
+    <property name="text" type="String" count="152" />
+    <property name="context" type="String" count="13" />
+    <property name="items" type="Array" count="149" />
+    <property name="width" type="Integer" count="25" />
+    <property name="height" type="Integer" count="25" />
+    <property name="child" type="Boolean" count="11" />
+    <property name="x" type="Integer" count="1" />
+    <property name="y" type="Integer" count="1" />
+  </Tag>
+  <Tag type="StandardStatusTile">
+    <property name="name" type="String" count="18" />
+    <property name="id" type="String" count="19" />
+    <property name="title" type="String" count="14" />
+    <property name="icon" type="String" count="6" />
+    <property name="x" type="Integer" count="1" />
+    <property name="y" type="Integer" count="1" />
+    <property name="width" type="Integer" count="1" />
+    <property name="height" type="Integer" count="1" />
+    <property name="child" type="Boolean" count="1" />
+    <property name="context" type="String" count="1" />
+    <property name="size" type="String" count="1" Values="Micro,Mini,Standard,Large,Wide,AutoFill,Undefined" />
+    <property name="items" type="Array" count="1" />
+    <property name="clickable" type="Boolean" count="7" />
+  </Tag>
+  <Tag type="HotFilter">
+    <property name="id" type="String" count="2" />
+    <property name="width" type="Integer" count="3" />
+    <property name="height" type="Integer" count="3" />
+    <property name="child" type="Boolean" count="2" />
+    <property name="size" type="String" count="3" Values="Micro,Mini,Standard,Large,Wide,AutoFill,Undefined" />
+    <property name="tileStyle" type="String" count="3" Values="None,Normal,Filter,Header,Footer,Wizard,Parameters,Batch" />
+    <property name="userControl" type="Boolean" count="1" />
+  </Tag>
+  <Tag type="WizardManager">
+    <property name="id" type="String" count="45" />
+    <property name="text" type="String" count="45" />
+    <property name="name" type="String" count="37" />
+    <property name="wizard" type="Boolean" count="8" />
+    <property name="items" type="Array" count="45" />
+    <property name="collapsible" type="Boolean" count="1" />
+  </Tag>
+  <Tag type="Splitter">
+    <property name="id" type="String" count="2" />
+    <property name="splitRatio" type="Float" count="2" />
+    <property name="splitterMode" type="String" count="2" Values="Vertical,Horizontal" />
+    <property name="rows" type="Integer" count="2" />
+    <property name="cols" type="Integer" count="2" />
+    <property name="items" type="Array" count="2" />
+  </Tag>
+  <Tag type="TreeBodyEdit">
+    <property name="addRowEnabled" type="Boolean" count="10" />
+    <property name="allowCallDialog" type="Boolean" count="6" />
+    <property name="allowDelete" type="Boolean" count="11" />
+    <property name="allowInsert" type="Boolean" count="11" />
+    <property name="allowMultipleSel" type="Boolean" count="9" />
+    <property name="allowOrdering" type="Boolean" count="6" />
+    <property name="allowSearch" type="Boolean" count="6" />
+    <property name="binding" type="Object" count="11">
+      <property name="activation" type="String" count="27" />
+      <property name="buttonId" type="Integer" count="2017" />
+      <property name="comboType" type="String" count="18" Values="Simple,DropDown,DropDownList" />
+      <property name="controlClass" type="String" count="1" />
+      <property name="datasource" type="String" count="27152" />
+      <property name="enableAddOnFly" type="Boolean" count="1289" />
+      <property name="enableLink" type="Boolean" count="9" />
+      <property name="fields" type="Array" count="28" />
+      <property name="hotLink" type="Object" count="2053">
+        <property name="addOnFlyNamespace" type="String" count="13" />
+        <property name="autoFind" type="Boolean" count="2" />
+        <property name="auxKeys" type="Array" count="68" />
+        <property name="buttonId" type="Integer" count="2" />
+        <property name="enableAddOnFly" type="Boolean" count="777" />
+        <property name="enableHotLink" type="Boolean" count="6" />
+        <property name="enableLink" type="Boolean" count="14" />
+        <property name="fields" type="Array" count="27" />
+        <property name="inlineHotlinkDescription" type="String" count="583" />
+        <property name="items" type="Array" count="103" />
+        <property name="mustExistData" type="Boolean" count="1268" />
+        <property name="name" type="String" count="2053" />
+        <property name="namespace" type="String" count="1974" />
+        <property name="selector" type="String" count="103" />
+      </property>
+      <property name="hotLink" type="String" count="2659" />
+      <property name="hotLinkNS" type="String" count="2611" />
+      <property name="inlineHotlinkDescription" type="String" count="2" />
+      <property name="items" type="Array" count="49" />
+      <property name="minValue" type="Integer" count="1" />
+      <property name="mustExistData" type="Boolean" count="1642" />
+      <property name="selector" type="String" count="48" />
+    </property>
+    <property name="dblClickEnabled" type="Boolean" count="2" />
+    <property name="enlargeLastColumn" type="Boolean" count="3" />
+    <property name="selectionColumn" type="Boolean" count="6" />
+    <property name="selectionColumnField" type="String" count="6" />
+    <property name="height" type="Integer" count="11" />
+    <property name="id" type="String" count="11" />
+    <property name="showDataTip" type="Boolean" count="8" />
+    <property name="showFooterToolbar" type="Boolean" count="10" />
+    <property name="showHeaderToolbar" type="Boolean" count="11" />
+    <property name="showStatusBar" type="Boolean" count="8" />
+    <property name="text" type="String" count="10" />
+    <property name="width" type="Integer" count="11" />
+    <property name="anchor" type="String" count="11" />
+    <property name="allowOrderingOnBrowse" type="Boolean" count="1" />
+    <property name="allowOrderingOnEdit" type="Boolean" count="1" />
+    <property name="linesPerRow" type="Integer" count="6" />
+    <property name="name" type="String" count="8" />
+    <property name="enlargeLastStringColumn" type="Boolean" count="2" />
+    <property name="titleRows" type="Integer" count="1" />
+    <property name="expandCollapseColumnField" type="String" count="2" />
+    <property name="titleRows" type="Float" count="1" />
+    <property name="enlargeAllStringColumns" type="Boolean" count="2" />
+    <property name="insertRowEnabled" type="Boolean" count="4" />
+    <property name="deleteRowEnabled" type="Boolean" count="4" />
+    <property name="showColumnHeaders" type="Boolean" count="1" />
+    <property name="items" type="Array" count="2" />
+  </Tag>
+  <Tag type="Tree">
+    <property name="id" type="String" count="9" />
+    <property name="text" type="String" count="5" />
+    <property name="x" type="Integer" count="9" />
+    <property name="y" type="Integer" count="9" />
+    <property name="width" type="Integer" count="9" />
+    <property name="height" type="Integer" count="9" />
+    <property name="border" type="Boolean" count="9" />
+    <property name="hScroll" type="Boolean" count="2" />
+    <property name="hasButtons" type="Boolean" count="4" />
+    <property name="hasLines" type="Boolean" count="4" />
+    <property name="linesAtRoot" type="Boolean" count="4" />
+    <property name="style" type="Integer" count="1" />
+    <property name="disableDragDrop" type="Boolean" count="1" />
+    <property name="editLabels" type="Boolean" count="3" />
+    <property name="alwaysShowSelection" type="Boolean" count="3" />
+    <property name="tabStop" type="Boolean" count="1" />
+    <property name="tooltips" type="Boolean" count="1" />
+  </Tag>
+  <Tag type="Spin">
+    <property name="id" type="String" count="4" />
+    <property name="x" type="Integer" count="4" />
+    <property name="y" type="Integer" count="4" />
+    <property name="width" type="Integer" count="4" />
+    <property name="height" type="Integer" count="4" />
+    <property name="tabStop" type="Boolean" count="4" />
+    <property name="arrowKeys" type="Boolean" count="4" />
+    <property name="visible" type="Boolean" count="1" />
+    <property name="text" type="String" count="1" />
+    <property name="align" type="Integer" count="1" />
+    <property name="autoBuddy" type="Boolean" count="1" />
+    <property name="noThousands" type="Boolean" count="1" />
+    <property name="setBuddyInteger" type="Boolean" count="1" />
+  </Tag>
+  <Tag type="TabbedToolbar">
+    <property name="height" type="Integer" count="2" />
+    <property name="id" type="String" count="12" />
+    <property name="items" type="Array" count="10" />
+    <property name="name" type="String" count="10" />
+    <property name="width" type="Integer" count="7" />
+  </Tag>
+  <Tag type="ListCtrl">
+    <property name="id" type="String" count="6" />
+    <property name="x" type="Integer" count="6" />
+    <property name="y" type="Integer" count="6" />
+    <property name="width" type="Integer" count="6" />
+    <property name="height" type="Integer" count="6" />
+    <property name="border" type="Boolean" count="6" />
+    <property name="alignment" type="Integer" count="1" />
+    <property name="noColumnHeader" type="Boolean" count="3" />
+    <property name="view" type="Integer" count="4" />
+    <property name="alwaysShowSelection" type="Boolean" count="6" />
+    <property name="autoArrange" type="Boolean" count="2" />
+    <property name="singleSelection" type="Boolean" count="2" />
+  </Tag>
+  <Tag type="StatusTile">
+    <property name="x" type="Integer" count="1" />
+    <property name="y" type="Integer" count="1" />
+    <property name="width" type="Integer" count="1" />
+    <property name="height" type="Integer" count="1" />
+    <property name="child" type="Boolean" count="1" />
+    <property name="context" type="String" count="1" />
+    <property name="size" type="String" count="1" Values="Micro,Mini,Standard,Large,Wide,AutoFill,Undefined" />
+    <property name="items" type="Array" count="1" />
+  </Tag>
+  <Tag type="ProgressBar">
+    <property name="id" type="String" count="1" />
+    <property name="x" type="Integer" count="1" />
+    <property name="y" type="Integer" count="1" />
+    <property name="width" type="Integer" count="1" />
+    <property name="height" type="Integer" count="1" />
+    <property name="border" type="Boolean" count="1" />
+    <property name="tabStop" type="Boolean" count="1" />
+  </Tag>
+  <Tag type="RowViewContainer">
+    <property name="id" type="String" count="1" />
+    <property name="x" type="Integer" count="1" />
+    <property name="y" type="Integer" count="1" />
+    <property name="width" type="Integer" count="1" />
+    <property name="height" type="Integer" count="1" />
+    <property name="name" type="String" count="1" />
+    <property name="text" type="String" count="1" />
+    <property name="bodyedit" type="String" count="1" />
+  </Tag>
+</Tags>

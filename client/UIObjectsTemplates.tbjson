@@ -1,0 +1,198 @@
+const ControlClassesTemplates = {
+
+  "StringEdit" : {
+    "id": "",
+    "type": "Edit",
+    "controlClass": "StringEdit",
+    "controlCaption": "New edit",
+    "anchor": "COL1",
+    "captionSize": 3,
+    "controlSize": 7,
+    "binding": {
+      "datasource": ""
+    },
+    "tabStop": true,
+    "width": 48,
+    "height": 12,
+    "autoHScroll": true
+  },
+
+  "StringEdit Multiline" : {
+    "id": "",
+    "type": "Edit",
+    "controlClass": "StringEdit",
+    "controlCaption": "New edit",
+    "anchor": "COL1",
+    "captionSize": 3,
+    "controlSize": 7,
+    "binding": {
+      "datasource": ""
+    },
+    "tabStop": true,
+    "width": 48,
+    "height": 36,
+    "autoHScroll": true,
+    "rows": 3,
+    "multiline": true
+  },
+
+  "StringCombo+HKL" : [
+    {
+      "id": "",
+      "type": "Combo",
+      "controlClass": "StringComboDropDown",
+      "controlCaption": "New string combo with HKL",
+      "anchor": "COL1",
+      "captionSize": 3,
+      "controlSize": 2,
+      "binding": {
+        "datasource": "",
+        "hotLink" : {
+          "name" : "",
+          "namespace" : ""
+        }
+      },
+      "tabStop": true,
+      "width": 48,
+      "height": 12,
+      "autoHScroll": true
+    },
+    {
+      "id": "_DESCRI",
+      "type": "Label",
+      "controlClass": "StringStatic",
+      "controlCaption": "",
+      "anchor": "",
+      "captionSize": 3,
+      "controlSize": 6,
+      "binding": {
+        "datasource": ""
+      },
+      "width": 48,
+      "height": 12,
+      "autoHScroll": true
+    }    
+  ],
+
+  "StringStatic" : {
+    "id": "",
+    "type": "Label",
+    "controlClass": "StringStatic",
+    "controlCaption": "",
+    "anchor": "COL1",
+    "captionSize": 3,
+    "controlSize": 2,
+    "binding": {
+      "datasource": ""
+    },
+    "tabStop": true,
+    "width": 48,
+    "height": 12,
+    "autoHScroll": true
+  },
+
+  "CheckBox": {
+    "id": "",
+    "type": "Check",
+    "controlClass": "CheckBox",
+    "text": "New checkbox",
+    "labelOnLeft": true,
+    "textAlign": "Right",
+    "anchor": "COL1",
+    "captionSize": 3,
+    "controlSize": 1,
+    "binding": {
+      "datasource": ""
+    },
+    "tabStop": true,
+    "width": 163,
+    "height": 10
+  },
+
+  "LabelStatic": {
+    "id": "",
+    "type": "Label",
+    "controlClass": "LabelStatic",
+    "text": "New label static",
+    "anchor": "COL1",
+    "captionSize": 3,
+    "tabStop": false,    
+    "width": 327,
+    "height": 8,
+    "linePosition": 1,
+    "group": true
+  },
+
+  "EnumCombo": {
+    "id": "",
+    "type": "Combo",
+    "controlClass": "EnumCombo",
+    "controlCaption": "New enum",
+    "anchor": "COL1",
+    "captionSize": 3,
+    "controlSize": 3,
+    "binding": {
+       "datasource": ""
+    },
+    "tabStop": true,    
+    "width": 77,
+    "height": 12,
+    "comboType": "DropDownList",
+    "sort": true,
+    "vScroll": true,
+  },
+
+  "DateEdit": {
+    "id": "",
+    "type": "Edit",
+    "controlClass": "DateEdit",
+    "controlCaption": "New date",
+    "anchor": "COL1",
+    "captionSize": 3,
+    "controlSize": 3,
+    "binding": {
+      "datasource": ""
+    },
+    "tabStop": true,    
+    "autoHScroll": true,
+    "height": 12,
+    "width": 57,
+  },
+
+  "Button": {
+    "id": "",
+    "type": "Button",
+    "controlClass": "Button",
+    "controlCaption": "New button",
+    "anchor": "COL1",
+    "captionSize": 3,
+    "controlSize": 1,
+    "binding": {
+      "datasource": ""
+    },
+    "tabStop": false,    
+    "height": 12,
+    "width": 17,
+  }
+};
+  
+const UIObjectsTemplates = {
+  "Tile": {
+    "id" : "",
+    "type" : "Tile",
+    "name" : "NewTile",
+    "text" : "New Tile",
+    "items" : [],
+    "hasStaticArea" : true,
+    "height" : 73,
+    "width" : 654
+  },
+
+  "LayoutContainer": {
+      "id": "",
+      "type": "LayoutContainer",
+      "layoutType": 1,
+      "items": [],
+      "collapsible": true
+  }
+};

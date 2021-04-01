@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>jQuery Flex Tree Plugin Example</title>
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<link href="dist/flex-tree.min.css" rel="stylesheet">
+<style>
+body { font-family: 'Roboto Condensed'; background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);}
+.container { margin: 150px auto; max-width: 640px; }
+</style>
+</head>
+
+<body>
+  <div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="https://www.jqueryscript.net/other/flex-checkable-tree-view.html">Download This Plugin</a></li>
+<li><a href="https://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+  <div class="container">
+    <h1>jQuery Flex Tree Plugin Example</h1>
+    <h2>Checkbox</h2>
+    <div id="flex-tree-check"></div>
+    <h2>Radio</h2>
+    <div id="flex-tree-radio"></div>
+    <h2>Plain</h2>
+    <div id="flex-tree-plain"></div>
+  </div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<!-- <script src="dist/flex-tree.min.js"></script> -->
+<script src="src/js/flex-tree.js"></script>
+<script>
+  jQuery('#flex-tree-check').flexTree({
+  type: 'checkbox',
+  name: 'foo[]',
+  collapsed: false,
+  items: [
+  {
+    label: 'Item 1',
+    childrens: [
+    {
+      label: 'Item 1.1',
+      value: 'item_1_1',
+      checked: true },
+
+    {
+      label: 'Item 1.2',
+      value: 'item_1_2',
+      childrens: [
+      {
+        label: 'Item 1.2.1',
+        value: 'item_1_2_1',
+        childrens: [
+        {
+          label: 'Item 1.2.2.1',
+          value: 'item_1_2_2_1' },
+
+        {
+          label: 'Item 1.2.2.2',
+          value: 'item_1_2_2_2',
+          id: 'foo' }] },
+
+
+
+      {
+        label: 'Item 1.2.2',
+        value: 'item_1_2_2' }] },
+
+
+
+    {
+      label: 'Item 1.3',
+      value: 'item_1_3',
+      checked: true }] },
+
+
+
+  {
+    label: 'Item 2',
+    childrens: [
+    {
+      label: 'Item 2.1',
+      value: 'item_2_1',
+      checked: true }] }] });
+jQuery( '#flex-tree-plain' ).flexTree( {
+        name: 'foo',
+        collapsed: false,
+        items: [
+          {
+            label: 'Item 1',
+            childrens: [
+              {
+                label: 'Item 1.1',
+                value: 'item_1_1'
+              },
+              {
+                label: 'Item 1.2',
+                value: 'item_1_2',
+                childrens: [
+                  {
+                    label: 'Item 1.2.1',
+                    value: 'item_1_2_1',
+                    childrens: [
+                      {
+                        label: 'Item 1.2.2.1',
+                        value: 'item_1_2_2_1',
+                        checked: true
+                      },
+                      {
+                        label: 'Item 1.2.2.2',
+                        value: 'item_1_2_2_2',
+                        id: 'foo'
+                      }
+                    ]
+                  },
+                  {
+                    label: 'Item 1.2.2',
+                    value: 'item_1_2_2'
+                  }
+                ]
+              },
+              {
+                label: 'Item 1.3',
+                value: 'item_1_3'
+              }
+            ]
+          },
+          {
+            label: 'Item 2',
+            childrens: [
+              {
+                label: 'Item 2.1',
+                value: 'item_2_1'
+              }
+            ]
+          }
+        ]
+      } );
+jQuery( '#flex-tree-radio' ).flexTree( {
+        type: 'radio',
+        name: 'foo',
+        collapsed: false,
+        items: [
+          {
+            label: 'Item 1',
+            childrens: [
+              {
+                label: 'Item 1.1',
+                value: 'item_1_1'
+              },
+              {
+                label: 'Item 1.2',
+                value: 'item_1_2',
+                childrens: [
+                  {
+                    label: 'Item 1.2.1',
+                    value: 'item_1_2_1',
+                    childrens: [
+                      {
+                        label: 'Item 1.2.2.1',
+                        value: 'item_1_2_2_1',
+                        checked: true
+                      },
+                      {
+                        label: 'Item 1.2.2.2',
+                        value: 'item_1_2_2_2',
+                        id: 'foo'
+                      }
+                    ]
+                  },
+                  {
+                    label: 'Item 1.2.2',
+                    value: 'item_1_2_2'
+                  }
+                ]
+              },
+              {
+                label: 'Item 1.3',
+                value: 'item_1_3'
+              }
+            ]
+          },
+          {
+            label: 'Item 2',
+            childrens: [
+              {
+                label: 'Item 2.1',
+                value: 'item_2_1'
+              }
+            ]
+          }
+        ]
+      } );
+
+    </script>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

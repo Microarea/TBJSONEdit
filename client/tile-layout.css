@@ -1,0 +1,419 @@
+:root {
+    --base-width: 3rem;
+    --base-height: 2.2rem;
+    --max-width: inherit;
+    --block-switch: 0;
+}
+@media (max-width:1243px)
+{
+        :root {
+        --block-switch: 1;
+    }
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    font-family: "Open Sans",sans-serif!important;
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+}
+
+/* preso da Bootstrap*/
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+h6 {
+    font-size: inherit;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-fluid{
+    width:100%;
+    max-width: var(--max-width);
+    height: 100%;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+@media (min-width:576px)
+{
+    .container {
+        max-width:540px;
+    }
+}
+
+@media (min-width:768px)
+{
+    .container {
+        max-width:720px;
+    }
+}
+
+@media (min-width:992px)
+{
+    .container {
+        max-width:960px;
+    }
+}
+@media (min-width:1200px)
+{
+    .container {
+        max-width:1140px;
+    }
+}
+
+.tile-group {
+    --spacing: 0.8rem;
+    background-color: #f2f2f2; 
+    padding-left: var(--spacing);
+    padding-top: var(--spacing);
+    /* height:100%; */
+}
+
+.layout-container {
+    
+}
+
+.hbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.vbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tile {
+    --tile-padding: .74rem;
+    padding: var(--tile-padding);
+    border: 1px solid #eee;
+    background-color: #fbfbfb;
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,.04);
+    flex:1;
+    /* min-width: calc((10 * var(--base-width)) + 1.3em); */
+    margin-right: var(--spacing);
+    margin-bottom: var(--spacing);
+    box-sizing: border-box;
+}
+
+.tile-title {
+    padding-bottom: var(--tile-padding);
+    z-index: 1;
+}
+
+.tile-title div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 6px;
+}
+
+.tile-title h6 {
+    height: 1.25rem;
+    line-height: 1.30rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #005890;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+.tile-content {
+    max-width: 100%!important;
+}
+
+.tile-column {
+    min-width: calc((11 * var(--base-width)));
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 100%!important;
+}
+
+.order-1 {
+    order: 1;
+}
+.order-2 {
+    order: calc(2 + var(--block-switch));
+}
+.order-3 {
+    order: calc(3 - var(--block-switch));
+}
+.order-4 {
+    order: 4;
+}
+
+.tile-row {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%!important;
+    overflow: hidden;
+}
+
+.tile-control-group {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    padding: 2px;
+    min-height: var(--base-height);
+    max-width: 100%!important;
+    box-sizing: border-box;
+}
+
+.tile-autofill {
+    min-width: 1em; /* ?? senza questo non si dimensiona correttamente con il b.edit */
+}
+
+.tile-autofill .tile-control-group {
+    height: 100%!important;
+}
+
+.tile-control-caption {
+    display: flex;
+    align-items: center;
+    min-height: var(--base-height);
+}
+
+.tile-control-caption label {
+    text-align: end;
+    width: 100%;
+    margin-right: 5px;
+}
+
+.tile-control {
+    max-width: 100%!important;
+    box-sizing: border-box;
+}
+
+.tile-control input, select {
+    width:100%;
+    font-weight: 600;
+    border: none;
+    background: #e9e9e9;
+    padding: 4px 4px 2px;
+}
+
+.tile-control .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    min-height: var(--base-height);
+}
+
+.single-line {
+    height: var(--base-height);
+}
+
+.multi-line-2 {
+    height: calc(var(--base-height) * 1.3);
+}
+
+.multi-line-3 {
+    height: calc(var(--base-height) * 1.6);
+}
+
+.multi-line-caption {
+    align-items: baseline;
+    padding-top: 4px;
+}
+
+.tile-control input[type=checkbox] {
+    height: 1.4rem;
+    margin: -9px;
+}
+
+.tile-control input[type=date] {
+    font-size: 0.8rem;
+}
+
+.tile-control .string-static {
+    border: 1px solid #eee;
+    height: 1.85rem;
+    box-sizing: border-box;
+}
+
+.tile-control .bodyedit {
+    overflow: auto;
+}
+
+.tile-control .bodyedit-header {
+    min-width: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background: #f2f2f2;
+}
+
+.tile-control .bodyedit-cell {
+    border: 1px solid #eee;
+    height: 1.1rem;
+    padding: 5px 0 5px 0;
+    padding-top: 0.5rem;
+    text-align: center;
+    min-width: 12rem;
+}
+
+.tile-control button {
+    height: 100%;
+    width: 100%;
+}
+
+.tile-control-group .label-static hr {
+    height: 1px;
+    background: #005890;
+    border: none;
+    margin-bottom: 0;
+}
+
+.tile-control-group .label-static label {
+    color: #005890;
+    line-height: 1.2rem;
+    padding: 2px;
+    min-height: 1.3rem;
+}
+
+.selected-ui-element {
+    border: #6e6e6e 2px dashed;
+}
+
+.size-1 {
+    width: calc(1 * var(--base-width) );
+    min-width: calc(1 * var(--base-width) );
+}
+.size-2{
+    width: calc(2 * var(--base-width) );
+    min-width: calc(2 * var(--base-width) );
+}
+.size-3{
+    width: calc(3 * var(--base-width) );
+    min-width: calc(3 * var(--base-width) );
+}
+.size-4{
+    width: calc(4 * var(--base-width) );
+    min-width: calc(4 * var(--base-width) );
+}
+.size-5{
+    width: calc(5 * var(--base-width) );
+    min-width: calc(5 * var(--base-width) );
+}
+.size-6{
+    width: calc(6 * var(--base-width) );
+    min-width: calc(6 * var(--base-width) );
+}
+.size-7{
+    width: calc(7 * var(--base-width) );
+    min-width: calc(7 * var(--base-width) );
+}
+.size-8{
+    width: calc(8 * var(--base-width) );
+    min-width: calc(8 * var(--base-width) );
+}
+.size-9{
+    width: calc(9 * var(--base-width) );
+    min-width: calc(9 * var(--base-width) );
+}
+.size-10{
+    width: calc(10 * var(--base-width) );
+    min-width: calc(10 * var(--base-width) );
+}
+.size-11{
+    width: calc(11 * var(--base-width) );
+    min-width: calc(11 * var(--base-width) );
+}
+.size-12{
+    width: calc(12 * var(--base-width) );
+    min-width: calc(12 * var(--base-width) );
+}
+.size-100{
+    width:100%;
+}
+
+.flex-1 {
+    flex: 1;
+}
+.flex-2 {
+    flex: 2;
+}
+.flex-3 {
+    flex: 3;
+}
+.flex-4 {
+    flex: 4;
+}
+.flex-5 {
+    flex: 5;
+}
+.flex-6 {
+    flex: 6;
+}
+.flex-7 {
+    flex: 7;
+}
+.flex-8 {
+    flex: 8;
+}
+.flex-9 {
+    flex: 9;
+}
+.flex-10 {
+    flex: 10;
+}
+.flex-11 {
+    flex: 11;
+}
+.flex-12 {
+    flex: 12;
+}
+
+.newsletter .tile-row {
+    max-width: calc((11 * var(--base-width))) !important;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: calc(var(--base-height) * var(--rows-4-col));
+}
+@media (max-width:1561px)
+{
+    .newsletter {
+        height: calc(var(--base-height) * var(--rows-3-col));
+    }
+}
+@media (max-width:1158px)
+{
+    .newsletter {
+        height: calc(var(--base-height) * var(--rows-2-col));
+    }
+}
+@media (max-width:832px)
+{
+    .newsletter {
+        height: auto;
+    }
+}

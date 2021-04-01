@@ -1,0 +1,106 @@
+
+const viewTemplate = `
+<div id="{id}" class="main-view container-fluid">
+</div>
+`
+
+const tileGroupTemplate = `
+<div id="{id}" class="tile-group vbox">
+</div>
+`
+
+const layoutContainerTemplate = `
+<div id="{id}" class="layout-container column">
+</div>
+`
+
+const tileTemplate = `
+<div class="tile" id="{id}">
+    <div class="tile-title">
+        <div>
+            <h6>{title}</h6>
+        </div>
+    </div>
+    <div class="tile-content">
+    </div>
+</div>
+`
+
+const tileColumnTemplate = `
+<div class="tile-column">
+</div>
+`
+
+const tileRowTemplate = `
+<div class="tile-row">
+</div>
+`
+
+const tileControlGroupTemplate = `
+<div class="tile-control-group" id="{id}">
+    <div class="tile-control-caption"><label>{caption}</label></div>
+</div>
+`
+
+const tileControlEditTemplate = `
+<div class="tile-control">
+    <input class="single-line" type="text" disabled>
+</div>
+`
+
+const tileControlDateTemplate = `
+<div class="tile-control">
+    <input class="single-line" type="date" disabled>
+</div>
+`
+
+const tileControlLabelTemplate = `
+<div class="tile-control">
+    <div class="string-static">
+        {placeholder}
+    </div>
+</div>
+`
+
+const tileControlEnumTemplate = `
+<div class="tile-control">
+    <select class="single-line" disabled>
+    </select>
+</div>
+`
+
+const tileControlComboTemplate = `
+<div class="tile-control">
+    <select class="single-line" disabled>
+    </select>
+</div>
+`
+
+const tileControlCheckboxTemplate = `
+<div class="tile-control">
+    <div class="checkbox-wrapper">
+        <input type="checkbox" disabled>
+    </div>
+</div>
+`
+
+const tileControlButtonTemplate = `
+<div class="tile-control">
+    <button disabled></button>
+</div>
+`
+
+const tileControlBodyeditTemplate = `
+<div class="tile-control">
+    <div class="bodyedit">
+    </div>
+</div>
+`
+const tileControlLabelStaticTemplate = `
+<div class="tile-control-group size-100" id="{id}">
+    <div class="label-static size-100">
+        <hr>
+        <label>{caption}</label>
+    </div>
+</div>
+`
