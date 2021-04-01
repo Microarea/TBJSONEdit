@@ -1,16 +1,29 @@
 <html>
-   <body>
-      <style>
-         #folderName {
-               width: 500px;
-         }
-      </style>
-      <div>
-         <p>Set the folder containing the TBJSON files</p>        
-         <input type="text" name="folderName" id="folderName">
-         <button onclick="home.openFolder()">open</button>
-      </div>
-   </body>
+
+<link rel="stylesheet" href="./w3.css">
+<title>TBJSON file editor</title>
+<style>
+    #folderName {
+        width: 500px;
+    }
+</style>
+
+<body>
+    <div class="w3-container w3-teal">
+        <center>
+            <h2>Set the folder containing the TBJSON files</h2>
+        </center>
+    </div>
+
+    <div class="w3-container">
+        <!--p>Path .:</p -->
+        <p></p>
+        <input class="w3-input w3-border w3-light-grey" type="text" name="folderName" id="folderName">
+        <p></p>
+        <button class="w3-btn w3-teal" onclick="home.openFolder()">open</button>
+    </div>
+</body>
+
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="home.js"></script>	
+<script type="text/javascript" src="home.js"></script>
