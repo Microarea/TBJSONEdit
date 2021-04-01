@@ -17,6 +17,40 @@ const ControlClassesTemplates = {
     "autoHScroll": true
   },
 
+  "EmailAddressEdit" : {
+    "id": "",
+    "type": "Edit",
+    "controlClass": "EmailAddressEdit",
+    "controlCaption": "New mail",
+    "anchor": "COL1",
+    "captionSize": 3,
+    "controlSize": 7,
+    "binding": {
+      "datasource": ""
+    },
+    "tabStop": true,
+    "width": 48,
+    "height": 12,
+    "autoHScroll": true
+  },
+
+"PercentEdit" : {
+    "id": "",
+    "type": "Edit",
+    "controlClass": "PercentEdit",
+    "controlCaption": "PercentEdit",
+    "anchor": "COL1",
+    "captionSize": 3,
+    "controlSize": 7,
+    "binding": {
+      "datasource": ""
+    },
+    "tabStop": true,
+    "width": 48,
+    "height": 12,
+    "autoHScroll": true
+  },
+
   "StringEdit Multiline" : {
     "id": "",
     "type": "Edit",

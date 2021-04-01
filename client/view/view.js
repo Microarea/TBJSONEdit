@@ -47,6 +47,15 @@ var view = {
             "caption": item.text || item.controlCaption,
             "id": item.id
         }));
+
+        // Set captionSize & controlSize if undefined in controllClass
+        var controlClass = ControlClassesTemplates[item.controlClass];
+        if (controlClass) {
+            if (!item.captionSize && controlClass.captionSize) item.captionSize = controlClass.captionSize;
+            if (!item.controlSize && controlClass.controlSize) item.controlSize = controlClass.controlSize;
+            if (!item.controlCaption && controlClass.controlCaption) item.controlCaption = " ";
+        }
+
         if (item.type == "Combo" && item.comboType && item.comboType == 2) {
             field.append($(tileControlEnumTemplate));
         } else if (item.type == "Combo" && item.controlClass == "EnumCombo") {

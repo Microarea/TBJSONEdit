@@ -234,6 +234,7 @@ var JSONEdit = {
     }
 
     function onControlClicked(event) {
+        //console.log("onControlClicked");
         onUIElementSelected(event);
         var ctrlId = $(event.currentTarget)[0].id;
         var ctrl = findItem(tiles, c => {
@@ -277,8 +278,6 @@ var JSONEdit = {
     $.get(
         "/openFolder", { folderName: folderName },
         function(data) {
-            console.log('Open folder.');
-
             data.forEach(form => {
                 var tile = JSON.parse(form.content);
                 tile.fname = form.fname;
