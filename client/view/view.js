@@ -182,12 +182,13 @@ var view = {
             tile.children(".tile-content").addClass("column");
 
             //sanitize invalid anchors
-            /*jsonTile.items.forEach( itm => {
-                if (!itm.anchor || (!itm.anchor.startsWith("COL") && !jsonTile.items.find(i => i.id == itm.anchor))) {
-                    itm.anchor = "";
-                }
-            });
-            */
+            if (jsonTile.items) {
+                jsonTile.items.forEach(itm => {
+                    if (!itm.anchor || (!itm.anchor.startsWith("COL") && !jsonTile.items.find(i => i.id == itm.anchor))) {
+                        itm.anchor = "";
+                    }
+                });
+            }
 
             var blockOrder = 1;
             for (c = 1; c <= 2; c++) {
