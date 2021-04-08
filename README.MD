@@ -6,10 +6,13 @@ A simple editor helping the creation and maintenance of `.tbjson` UI definition.
 ## Prerequisites
 To use this editor you need [Node.js](https://nodejs.org/en/) 8.9 or higher.  
 
+## Original project
+https://github.com/andrea-rinaldi-microarea/JSONEdit
+
 ## Installation
 Clone the repository:
 ```
-git clone https://github.com/andrea-rinaldi-microarea/JSONEdit.git
+git clone https://github.com/Microarea/TBJSONEdit.git
 ```
 move in the folder and install dependencies
 ```
@@ -51,6 +54,9 @@ Controls are UI elements with one of the following `type`:
 * `Radio`
 * `List`
 * `BodyEdit`
+* `EmailAddressEdit`
+* `PercentEdit`
+
 
 They share some common properties:
 ``` JSON5
