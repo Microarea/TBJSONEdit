@@ -207,9 +207,55 @@ const ControlClassesTemplates = {
     "tabStop": false,    
     "height": 12,
     "width": 17,
+  },
+
+  "BodyEdit": {
+    "id": "",
+      "type": "BodyEdit",
+      "controlClass": "BodyEdit",
+      "text": "Body Edit",
+      "x": 0,
+      "y": 0,
+      "width": 500,
+      "height": 116,
+      "clipChildren": true,
+      "ownerDraw": true,
+      "name": "",
+      "binding": {
+        "datasource": ""
+      },
+      "items": [
+        {
+          "type": "ColTitle",
+          "controlClass": "StringEdit",
+          "id": "IDC_BOX_ENTRIES_ITEM",
+          "text": "Item",
+          "name": "Item",
+          "binding": {
+            "datasource": "Item",
+            "hotLink": "",
+            "hotLinkNS": ""
+          }
+        }
+     ]
   }
 };
   
+const BodyEditColumTemplates = {
+  "StringEdit" : {
+     "type": "ColTitle",
+          "controlClass": "StringEdit",
+          "id": "IDC_BOX_ENTRIES_ITEM",
+          "text": "StringEdit",
+          "name": "Item",
+          "binding": {
+            "datasource": "",
+            "hotLink": "",
+            "hotLinkNS": ""
+          }
+  }
+};
+
 const UIObjectsTemplates = {
   "Tile": {
     "id" : "",

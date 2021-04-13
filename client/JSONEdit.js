@@ -6,6 +6,7 @@ var JSONEdit = {
     controlDown() {},
     removeTile() {},
     removeControl() {},
+    bodyeditAddColum() {},
     containerUp() {},
     containerDown() {},
     removeContainer() {},
@@ -31,8 +32,17 @@ var JSONEdit = {
         }
     }
 
-    function addControlActions() {
+    function addControlActions(bodyEdit = false) {
         $("#uiElementActions")[0].innerHTML = "";
+        if (bodyEdit) {
+            $("#uiElementActions").append($("#bodyedit-actions").html());
+            for (let [key] of Object.entries(BodyEditColumTemplates)) {
+                $('#bodyEditColumControlClasses').append($('<option/>', {
+                    value: key,
+                    text: key
+                }));
+            }
+        }
         $("#uiElementActions").append($("#control-actions").html());
     }
 
@@ -96,9 +106,9 @@ var JSONEdit = {
         }
     }
 
-    function showControlProperties() {
+    function showControlProperties(bodyEdit = false) {
         showUIObjectProperties($("#uiElementProperties"), selectedUIObject, ["auxKeys"], ["type", "controlClass"], ["text", "controlCaption", "id", "type", "comboType", "controlClass", "placeholder", "controlSize", "captionSize", "height", "anchor"]);
-        addControlActions();
+        addControlActions(bodyEdit);
     }
 
     var urlParams = new URLSearchParams(window.location.search);
@@ -234,14 +244,13 @@ var JSONEdit = {
     }
 
     function onControlClicked(event) {
-        //console.log("onControlClicked");
         onUIElementSelected(event);
         var ctrlId = $(event.currentTarget)[0].id;
         var ctrl = findItem(tiles, c => {
             return c.id && c.id == ctrlId
         });
         selectedUIObject = { type: "Control", obj: ctrl };
-        showControlProperties();
+        showControlProperties(ctrl.controlClass == 'BodyEdit');
     }
 
     function showView() {
@@ -375,7 +384,7 @@ var JSONEdit = {
 
         showView();
 
-        showControlProperties();
+        showControlProperties(selectedUIObject.obj.controlClass == 'BodyEdit');
     }
 
     JSONEdit.removeControl = function(event) {
@@ -394,7 +403,19 @@ var JSONEdit = {
         showView();
 
         showTileProperties();
+    }
 
+
+    JSONEdit.bodyeditAddColum = function(event) {
+        event.stopPropagation();
+        if (!selectedUIObject || selectedUIObject.type != "Control") return;
+        var BEcontrolClass = BodyEditColumTemplates[$('#bodyEditColumControlClasses').val()];
+
+        selectedUIObject.obj.items.push(BEcontrolClass);
+
+        showView();
+
+        showControlProperties(true);
     }
 
     function controlMove(displacement) {
