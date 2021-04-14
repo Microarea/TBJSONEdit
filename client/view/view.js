@@ -1,5 +1,6 @@
 var view = {
     addView(elem, jsonView, jsonTiles, extensions) {},
+    addPanel(elem, jsonPanels, extensions) {},
     render(template, props, flat) {},
     createField(item) {},
     createTile(jsonTile) {}
@@ -78,7 +79,11 @@ var view = {
             field.append(createBodyEdit(item));
         } else if (item.type == "Button") {
             field.append($(tileControlButtonTemplate));
+        } else if (item.type == "Radio") {
+            field.append('O');
+            field.append($(tileControlRadioTemplate));
         }
+
         if (field.children(".tile-control")) {
             field.children(".tile-control").addClass(item.controlSize ? ("size-" + item.controlSize) : "size-100");
         }
@@ -254,6 +259,14 @@ var view = {
             tg.append(createLayoutContainer(item, jsonTiles, extensions));
         });
         return tg;
+    }
+
+    view.addPanel = function(elem, jsonPanels, extensions) {
+        elem[0].innerHTML = "";
+        jsonPanels.forEach(jsonPanel => {
+            var panel = view.createTile(jsonPanel);
+            elem.append(panel);
+        });
     }
 
     view.addView = function(elem, jsonView, jsonTiles, extensions) {

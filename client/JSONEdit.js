@@ -270,6 +270,24 @@ var JSONEdit = {
         switch (type) {
             case 1:
                 return "View";
+            case 2:
+                return "Label";
+            case 3:
+                return "Button";
+            case 8:
+                return "Image";
+            case 9:
+                return "Group";
+            case 10:
+                return "Radio";
+            case 11:
+                return "Check";
+            case 12:
+                return "Combo";
+            case 13:
+                return "Edit";
+            case 66:
+                return "Panel";
             case 71:
                 return "Tile";
             case 72:
@@ -313,6 +331,23 @@ var JSONEdit = {
                     return true;
                 }
             });
+
+            // Not view and Tile group
+            if (!mainFrame) {
+                view.addPanel($("#main-content"), tiles);
+                //mainFrame = tiles[0];
+                //showViewContainerTree();
+
+                $(".main-view").click(onUIElementClicked);
+                $(".tile").click(onUIElementClicked);
+                $(".tile-control-group").click(onControlClicked);
+
+                if (selectedUIObject) {
+                    $(`#${selectedUIObject.obj.id}`).addClass("selected-ui-element");
+                }
+
+                return;
+            }
 
             // find the main view
             mainView = findItem(tiles, tile => {

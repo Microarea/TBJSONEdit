@@ -37,7 +37,6 @@ app.get('/', function(req, res) {
 
 app.get('/openFolder', function(req, res) {
     var folderName = req.query.folderName;
-    console.log(folderName);
     if (!nodeFs.existsSync(folderName)) {
         return res.status(500).send("The folder does not exists");
     }

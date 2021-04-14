@@ -4,9 +4,9 @@
     --max-width: inherit;
     --block-switch: 0;
 }
-@media (max-width:1243px)
-{
-        :root {
+
+@media (max-width:1243px) {
+     :root {
         --block-switch: 1;
     }
 }
@@ -14,7 +14,7 @@
 html {
     height: 100%;
     margin: 0;
-    font-family: "Open Sans",sans-serif!important;
+    font-family: "Open Sans", sans-serif!important;
     font-size: 12px;
 }
 
@@ -22,8 +22,15 @@ body {
     margin: 0;
 }
 
+
 /* preso da Bootstrap*/
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-top: 0;
     margin-bottom: .5rem;
 }
@@ -32,7 +39,7 @@ h6 {
     font-size: inherit;
 }
 
-.container{
+.container {
     width: 100%;
     height: 100%;
     padding-right: 1.25rem;
@@ -41,52 +48,47 @@ h6 {
     margin-left: auto;
 }
 
-.container-fluid{
-    width:100%;
+.container-fluid {
+    width: 100%;
     max-width: var(--max-width);
     height: 100%;
-    margin-right:auto;
-    margin-left:auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-@media (min-width:576px)
-{
+@media (min-width:576px) {
     .container {
-        max-width:540px;
+        max-width: 540px;
     }
 }
 
-@media (min-width:768px)
-{
+@media (min-width:768px) {
     .container {
-        max-width:720px;
+        max-width: 720px;
     }
 }
 
-@media (min-width:992px)
-{
+@media (min-width:992px) {
     .container {
-        max-width:960px;
+        max-width: 960px;
     }
 }
-@media (min-width:1200px)
-{
+
+@media (min-width:1200px) {
     .container {
-        max-width:1140px;
+        max-width: 1140px;
     }
 }
 
 .tile-group {
     --spacing: 0.8rem;
-    background-color: #f2f2f2; 
+    background-color: #f2f2f2;
     padding-left: var(--spacing);
     padding-top: var(--spacing);
     /* height:100%; */
 }
 
-.layout-container {
-    
-}
+.layout-container {}
 
 .hbox {
     display: flex;
@@ -111,8 +113,8 @@ h6 {
     padding: var(--tile-padding);
     border: 1px solid #eee;
     background-color: #fbfbfb;
-    box-shadow: 5px 5px 5px 0 rgba(0,0,0,.04);
-    flex:1;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, .04);
+    flex: 1;
     /* min-width: calc((10 * var(--base-width)) + 1.3em); */
     margin-right: var(--spacing);
     margin-bottom: var(--spacing);
@@ -158,12 +160,15 @@ h6 {
 .order-1 {
     order: 1;
 }
+
 .order-2 {
     order: calc(2 + var(--block-switch));
 }
+
 .order-3 {
     order: calc(3 - var(--block-switch));
 }
+
 .order-4 {
     order: 4;
 }
@@ -186,7 +191,8 @@ h6 {
 }
 
 .tile-autofill {
-    min-width: 1em; /* ?? senza questo non si dimensiona correttamente con il b.edit */
+    min-width: 1em;
+    /* ?? senza questo non si dimensiona correttamente con il b.edit */
 }
 
 .tile-autofill .tile-control-group {
@@ -210,8 +216,9 @@ h6 {
     box-sizing: border-box;
 }
 
-.tile-control input, select {
-    width:100%;
+.tile-control input,
+select {
+    width: 100%;
     font-weight: 600;
     border: none;
     background: #e9e9e9;
@@ -219,6 +226,12 @@ h6 {
 }
 
 .tile-control .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    min-height: var(--base-height);
+}
+
+.tile-control .radio-wrapper {
     display: flex;
     align-items: center;
     min-height: var(--base-height);
@@ -301,90 +314,113 @@ h6 {
 }
 
 .size-1 {
-    width: calc(1 * var(--base-width) );
-    min-width: calc(1 * var(--base-width) );
+    width: calc(1 * var(--base-width));
+    min-width: calc(1 * var(--base-width));
 }
-.size-2{
-    width: calc(2 * var(--base-width) );
-    min-width: calc(2 * var(--base-width) );
+
+.size-2 {
+    width: calc(2 * var(--base-width));
+    min-width: calc(2 * var(--base-width));
 }
-.size-3{
-    width: calc(3 * var(--base-width) );
-    min-width: calc(3 * var(--base-width) );
+
+.size-3 {
+    width: calc(3 * var(--base-width));
+    min-width: calc(3 * var(--base-width));
 }
-.size-4{
-    width: calc(4 * var(--base-width) );
-    min-width: calc(4 * var(--base-width) );
+
+.size-4 {
+    width: calc(4 * var(--base-width));
+    min-width: calc(4 * var(--base-width));
 }
-.size-5{
-    width: calc(5 * var(--base-width) );
-    min-width: calc(5 * var(--base-width) );
+
+.size-5 {
+    width: calc(5 * var(--base-width));
+    min-width: calc(5 * var(--base-width));
 }
-.size-6{
-    width: calc(6 * var(--base-width) );
-    min-width: calc(6 * var(--base-width) );
+
+.size-6 {
+    width: calc(6 * var(--base-width));
+    min-width: calc(6 * var(--base-width));
 }
-.size-7{
-    width: calc(7 * var(--base-width) );
-    min-width: calc(7 * var(--base-width) );
+
+.size-7 {
+    width: calc(7 * var(--base-width));
+    min-width: calc(7 * var(--base-width));
 }
-.size-8{
-    width: calc(8 * var(--base-width) );
-    min-width: calc(8 * var(--base-width) );
+
+.size-8 {
+    width: calc(8 * var(--base-width));
+    min-width: calc(8 * var(--base-width));
 }
-.size-9{
-    width: calc(9 * var(--base-width) );
-    min-width: calc(9 * var(--base-width) );
+
+.size-9 {
+    width: calc(9 * var(--base-width));
+    min-width: calc(9 * var(--base-width));
 }
-.size-10{
-    width: calc(10 * var(--base-width) );
-    min-width: calc(10 * var(--base-width) );
+
+.size-10 {
+    width: calc(10 * var(--base-width));
+    min-width: calc(10 * var(--base-width));
 }
-.size-11{
-    width: calc(11 * var(--base-width) );
-    min-width: calc(11 * var(--base-width) );
+
+.size-11 {
+    width: calc(11 * var(--base-width));
+    min-width: calc(11 * var(--base-width));
 }
-.size-12{
-    width: calc(12 * var(--base-width) );
-    min-width: calc(12 * var(--base-width) );
+
+.size-12 {
+    width: calc(12 * var(--base-width));
+    min-width: calc(12 * var(--base-width));
 }
-.size-100{
-    width:100%;
+
+.size-100 {
+    width: 100%;
 }
 
 .flex-1 {
     flex: 1;
 }
+
 .flex-2 {
     flex: 2;
 }
+
 .flex-3 {
     flex: 3;
 }
+
 .flex-4 {
     flex: 4;
 }
+
 .flex-5 {
     flex: 5;
 }
+
 .flex-6 {
     flex: 6;
 }
+
 .flex-7 {
     flex: 7;
 }
+
 .flex-8 {
     flex: 8;
 }
+
 .flex-9 {
     flex: 9;
 }
+
 .flex-10 {
     flex: 10;
 }
+
 .flex-11 {
     flex: 11;
 }
+
 .flex-12 {
     flex: 12;
 }
@@ -399,20 +435,20 @@ h6 {
     flex-wrap: wrap;
     height: calc(var(--base-height) * var(--rows-4-col));
 }
-@media (max-width:1561px)
-{
+
+@media (max-width:1561px) {
     .newsletter {
         height: calc(var(--base-height) * var(--rows-3-col));
     }
 }
-@media (max-width:1158px)
-{
+
+@media (max-width:1158px) {
     .newsletter {
         height: calc(var(--base-height) * var(--rows-2-col));
     }
 }
-@media (max-width:832px)
-{
+
+@media (max-width:832px) {
     .newsletter {
         height: auto;
     }

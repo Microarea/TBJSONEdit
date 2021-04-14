@@ -14,7 +14,6 @@
         $.get(
             "/currentFolder", {},
             function(path) {
-                console.log(path);
                 window.location = "JSONEdit.html?folderName=" + path;
             }
         );
