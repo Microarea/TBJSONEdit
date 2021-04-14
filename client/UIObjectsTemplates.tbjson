@@ -143,6 +143,24 @@ const ControlClassesTemplates = {
     "height": 10
   },
 
+  "Radio": {
+    "id": "",
+    "type": "Radio",
+    "controlClass": "RadioButton",
+    "text": "New Radio",
+    "labelOnLeft": true,
+    "textAlign": "Right",
+    "anchor": "COL1",
+    "captionSize": 3,
+    "controlSize": 1,
+    "binding": {
+      "datasource": ""
+    },
+    "tabStop": true,
+    "width": 163,
+    "height": 10
+  },
+
   "LabelStatic": {
     "id": "",
     "type": "Label",

@@ -80,7 +80,6 @@ var view = {
         } else if (item.type == "Button") {
             field.append($(tileControlButtonTemplate));
         } else if (item.type == "Radio") {
-            field.append('O');
             field.append($(tileControlRadioTemplate));
         }
 
