@@ -32,6 +32,17 @@ var JSONEdit = {
         }
     }
 
+    function addPanelActions() {
+        $("#uiElementActions")[0].innerHTML = "";
+        $("#uiElementActions").append($("#tile-actions").html());
+        for (let [key] of Object.entries(ControlClassesTemplates)) {
+            $('#controlClasses').append($('<option/>', {
+                value: key,
+                text: key
+            }));
+        }
+    }
+
     function addControlActions(bodyEdit = false) {
         $("#uiElementActions")[0].innerHTML = "";
         if (bodyEdit) {
@@ -116,6 +127,7 @@ var JSONEdit = {
     var tiles = [];
     var selectedUIObject = null;
     var mainView = null;
+    var mainPanels = null;
 
     function explodeContainer(item) {
         var node = {};
@@ -135,6 +147,30 @@ var JSONEdit = {
             var tile = tiles.find(t => t.id == item.href);
             node.label = tile.name;
             node.id = treeItemId(item.id);
+        }
+        return node;
+    }
+
+    function explodeContainerPanel(item) {
+        var node = {};
+        if (item.items) {
+            node.label = `${item.id || ""} (${item.type})`;
+            node.id = treeItemId(item.id);
+            node.childrens = [];
+            item.items.forEach(itm => {
+                if (itm.href) {
+                    var tile = tiles.find(t => t.id == itm.href);
+                    node.childrens.push({ label: tile.name, id: treeItemId(tile.id) });
+                } else {
+                    node.childrens.push(explodeContainerPanel(itm));
+                }
+            });
+        } else {
+            var tile = tiles.find(t => t.id == item.href);
+            if (tile) {
+                node.label = tile.id;
+                node.id = treeItemId(item.id);
+            }
         }
         return node;
     }
@@ -170,6 +206,9 @@ var JSONEdit = {
             case "Tile":
                 showTileProperties();
                 break;
+            case "Panel":
+                showPanelProperties();
+                break;
             case "View":
                 showViewProperties();
                 break;
@@ -186,7 +225,15 @@ var JSONEdit = {
 
     function showViewContainerTree() {
         var viewContainers = [];
-        viewContainers.push(explodeContainer(mainView));
+
+        if (mainView) {
+            viewContainers.push(explodeContainer(mainView));
+        } else {
+            mainPanels.forEach(mainPanel => {
+                viewContainers.push(explodeContainerPanel(mainPanel));
+            });
+        }
+
         $("#view-container-tree")[0].innerHTML = "";
         $("#view-container-tree").flexTree({
             name: 'viewContainerTree',
@@ -209,6 +256,9 @@ var JSONEdit = {
         switch (uiObj.type) {
             case "Tile":
                 showTileProperties();
+                break;
+            case "Panel":
+                showPanelProperties();
                 break;
             case "View":
                 showViewProperties();
@@ -233,6 +283,11 @@ var JSONEdit = {
         addTileActions();
     }
 
+    function showPanelProperties() {
+        showUIObjectProperties($("#uiElementProperties"), selectedUIObject, ["items", "fname"], ["type", "id"], ["text", "id", "size"]);
+        addPanelActions();
+    }
+
     function showLayoutContainerProperties() {
         showUIObjectProperties($("#uiElementProperties"), selectedUIObject, ["items"]);
         addLayoutContainerActions();
@@ -254,7 +309,12 @@ var JSONEdit = {
     }
 
     function showView() {
-        view.addView($("#main-content"), mainView, tiles);
+        if (mainView) {
+            view.addView($("#main-content"), mainView, tiles);
+        } else {
+            view.addPanel($("#main-content"), mainPanels);
+        }
+
         showViewContainerTree();
 
         $(".main-view").click(onUIElementClicked);
@@ -265,6 +325,8 @@ var JSONEdit = {
             $(`#${selectedUIObject.obj.id}`).addClass("selected-ui-element");
         }
     }
+
+
 
     function uiObjectType(type) {
         switch (type) {
@@ -333,19 +395,10 @@ var JSONEdit = {
             });
 
             // Not view and Tile group
+
             if (!mainFrame) {
-                view.addPanel($("#main-content"), tiles);
-                //mainFrame = tiles[0];
-                //showViewContainerTree();
-
-                $(".main-view").click(onUIElementClicked);
-                $(".tile").click(onUIElementClicked);
-                $(".tile-control-group").click(onControlClicked);
-
-                if (selectedUIObject) {
-                    $(`#${selectedUIObject.obj.id}`).addClass("selected-ui-element");
-                }
-
+                mainPanels = tiles;
+                showView();
                 return;
             }
 
@@ -404,18 +457,37 @@ var JSONEdit = {
     JSONEdit.addControl = function(event) {
         event.stopPropagation();
         var controlClass = ControlClassesTemplates[$('#controlClasses').val()];
-        if (!controlClass || !selectedUIObject || selectedUIObject.type != "Tile") return;
-        var tile = selectedUIObject.obj;
-        if (!Array.isArray(controlClass))
-            controlClass = [controlClass];
-        var firstPos = tile.items.length;
-        controlClass.forEach(cc => {
-            var ctrl = _.merge({}, cc);
-            ctrl.id = `IDC_${selectedUIObject.obj.name.toUpperCase()}_CTRL${tile.items.length}`;
-            if (ctrl.anchor == "") ctrl.anchor = `IDC_${selectedUIObject.obj.name.toUpperCase()}_CTRL${firstPos}`;
-            tile.items.push(ctrl);
-        });
-        selectedUIObject = { type: "Control", obj: tile.items[firstPos] };
+        if (!controlClass || !selectedUIObject) return;
+
+        // Tile
+        if (selectedUIObject.type == "Tile") {
+            var tile = selectedUIObject.obj;
+            if (!Array.isArray(controlClass))
+                controlClass = [controlClass];
+            var firstPos = tile.items.length;
+            controlClass.forEach(cc => {
+                var ctrl = _.merge({}, cc);
+                ctrl.id = `IDC_${selectedUIObject.obj.name.toUpperCase()}_CTRL${tile.items.length}`;
+                if (ctrl.anchor == "") ctrl.anchor = `IDC_${selectedUIObject.obj.name.toUpperCase()}_CTRL${firstPos}`;
+                tile.items.push(ctrl);
+            });
+            selectedUIObject = { type: "Control", obj: tile.items[firstPos] };
+        }
+        // Panel
+        if (selectedUIObject.type == "Panel") {
+            var panel = selectedUIObject.obj;
+            if (!Array.isArray(controlClass))
+                controlClass = [controlClass];
+            var firstPos = panel.items.length;
+            controlClass.forEach(cc => {
+                var ctrl = _.merge({}, cc);
+                ctrl.id = `${selectedUIObject.obj.id}_CTRL${panel.items.length}`;
+                if (ctrl.anchor) ctrl.anchor = "";
+                console.log('ctrl', ctrl);
+                panel.items.push(ctrl);
+            });
+            selectedUIObject = { type: "Control", obj: panel.items[firstPos] };
+        }
 
         showView();
 

@@ -49,8 +49,25 @@ var view = {
             "id": item.id
         }));
 
-        // Set captionSize & controlSize if undefined in controllClass
-        var controlClass = ControlClassesTemplates[item.controlClass];
+        if (!item.controlClass) {
+            // Prende la controlClass prima disponibile se non è definita va per ordine di ControlClassesTemplates.!
+            for (let [key] of Object.entries(ControlClassesTemplates)) {
+                if (item.type == ControlClassesTemplates[key].type) {
+                    item.controlClass = ControlClassesTemplates[key].controlClass;
+                    break;
+                }
+            }
+        }
+
+        // Set captionSize & controlSize if undefined in controllClas
+        var controlClass = null; //ControlClassesTemplates[item.controlClass];
+        for (let [key] of Object.entries(ControlClassesTemplates)) {
+            if (item.controlClass == ControlClassesTemplates[key].controlClass) {
+                controlClass = ControlClassesTemplates[key];
+                break;
+            }
+        }
+
         if (controlClass) {
             if (!item.captionSize && controlClass.captionSize) item.captionSize = controlClass.captionSize;
             if (!item.controlSize && controlClass.controlSize) item.controlSize = controlClass.controlSize;
@@ -262,10 +279,15 @@ var view = {
 
     view.addPanel = function(elem, jsonPanels, extensions) {
         elem[0].innerHTML = "";
+        // view fitizzia
+        var lc = $(view.render(layoutContainerTemplate, { "id": "000000" || null }));
+
         jsonPanels.forEach(jsonPanel => {
             var panel = view.createTile(jsonPanel);
-            elem.append(panel);
+            lc.append(panel);
         });
+
+        elem.append(lc);
     }
 
     view.addView = function(elem, jsonView, jsonTiles, extensions) {

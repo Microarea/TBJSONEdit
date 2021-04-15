@@ -175,6 +175,7 @@ The `type` tag indicates the general type of the UI element
 * Tile (71)
 * TileManager (76)
 * TilePanel (77)
+* Panel
 
 ## Controls
 * Edit
