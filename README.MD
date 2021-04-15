@@ -35,7 +35,7 @@ tbjson-edit
 open in editing all tbjson in folder
 tbje -e
 ```
-open sinfle file to editing
+open single file to editing
 tbje -f file.tbjson
 ```
 The application starts and the default browser is opened.   
