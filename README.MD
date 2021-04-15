@@ -32,11 +32,11 @@ tbje
 -- or --
 tbjson-edit
 ```
-open in editing all tbjson in folder
-tbje -e
+
+## Paramiter
 ```
-open single file to editing
-tbje -f file.tbjson
+-e [open in editing all tbjson in folder>]
+-f <file.tbjson> [open single file to editing]
 ```
 The application starts and the default browser is opened.   
 In the first page set a folder containing a group of `.tbjson` files forming a UI. The current folder is prompted as default.
