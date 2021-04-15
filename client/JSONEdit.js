@@ -76,12 +76,35 @@ var JSONEdit = {
         $(`#${treeItemId(target[0].id)}`).addClass("selected-tree-element");
     }
 
+    function findFileNAme(ui, inItems, fn) {
+        if (!inItems)
+            return;
+        inItems.forEach(item => {
+            //console.log('=> item', item);
+            if (item.id == ui.obj.id) {
+                $("#uiElementFname")[0].innerHTML = fn;
+            }
+        });
+        if (!inItems.items) {
+            rt = findFileNAme(ui, inItems.items, fn);
+        }
+    }
+
     function showUIObjectProperties(element, ui, hide, readonly, managed, parent) {
         if (!ui.obj) return;
         if (!parent) {
             $("#uiElementType")[0].innerHTML = ui.type;
+            $("#uiElementFname")[0].innerHTML = "";
+            if (ui.obj.fname) {
+                $("#uiElementFname")[0].innerHTML = ui.obj.fname;
+            } else {
+                tiles.forEach(tile => {
+                    findFileNAme(ui, tile.items, tile.fname);
+                });
+            }
             $("#uiElementProperties")[0].innerHTML = "";
         }
+
         for (let [key, value] of Object.entries(ui.obj)) {
             if (hide && hide.includes(key)) continue;
             var template = $("#property-template");
@@ -326,8 +349,6 @@ var JSONEdit = {
         }
     }
 
-
-
     function uiObjectType(type) {
         switch (type) {
             case 1:
@@ -483,7 +504,6 @@ var JSONEdit = {
                 var ctrl = _.merge({}, cc);
                 ctrl.id = `${selectedUIObject.obj.id}_CTRL${panel.items.length}`;
                 if (ctrl.anchor) ctrl.anchor = "";
-                console.log('ctrl', ctrl);
                 panel.items.push(ctrl);
             });
             selectedUIObject = { type: "Control", obj: panel.items[firstPos] };

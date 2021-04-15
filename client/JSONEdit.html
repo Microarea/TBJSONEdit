@@ -46,6 +46,12 @@
             font-size: 21px;
         }
         
+        .side-panel-fname {
+            height: 3rem;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
         .side-panel-content {
             /* height: 70%; */
         }
@@ -142,9 +148,17 @@
                         <div id="uiElementType">Select object</div>
                     </center>
                 </div>
+
                 <div class="side-panel-content">
+                    <div class="property-row">
+                        <div class="property-name">File</div>
+                        <div class="property-value">
+                            <div id="uiElementFname"></div>
+                        </div>
+                    </div>
                     <div id="uiElementProperties"></div>
                 </div>
+
                 <div class="side-panel-bottom">
                     <button onclick="JSONEdit.apply()">Apply</button>
                 </div>
