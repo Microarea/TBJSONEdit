@@ -183,7 +183,8 @@ var JSONEdit = {
             item.items.forEach(itm => {
                 if (itm.href) {
                     var tile = tiles.find(t => t.id == itm.href);
-                    node.childrens.push({ label: tile.name, id: treeItemId(tile.id) });
+                    if (tile)
+                        node.childrens.push({ label: tile.name, id: treeItemId(tile.id) });
                 } else {
                     node.childrens.push(explodeContainerPanel(itm));
                 }
