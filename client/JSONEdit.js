@@ -147,6 +147,7 @@ var JSONEdit = {
 
     var urlParams = new URLSearchParams(window.location.search);
     var folderName = urlParams.get("folderName");
+    var fileName = urlParams.get("filename");
     var tiles = [];
     var selectedUIObject = null;
     var mainView = null;
@@ -392,7 +393,15 @@ var JSONEdit = {
             data.forEach(form => {
                 var tile = JSON.parse(form.content);
                 tile.fname = form.fname;
-                tiles.push(tile);
+
+                if (fileName) {
+                    if (fileName == tile.fname) {
+                        tiles.push(tile);
+                    }
+                } else {
+                    // all file in directory
+                    tiles.push(tile);
+                }
             });
 
             var idDictionary = {}
@@ -417,7 +426,6 @@ var JSONEdit = {
             });
 
             // Not view and Tile group
-
             if (!mainFrame) {
                 mainPanels = tiles;
                 showView();

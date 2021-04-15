@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var opn = require('opn');
 var app = express();
 var args = process.argv.slice(2);
+var fname = '';
 
 //console.log('myArgs: ', args[0], __dirname);
 
@@ -28,8 +29,10 @@ app.use(express.static(path.join(__dirname, 'client')));
 
 app.get('/', function(req, res) {
     if (args[0] == '-e') {
-        var currentPath = process.cwd();
         res.sendFile(path.join(__dirname, 'client', 'autostart.html'));
+    } else if (args[0] == '-f') {
+        fname = args[1];
+        res.sendFile(path.join(__dirname, 'client', 'editfile.html'));
     } else {
         res.sendFile(path.join(__dirname, 'client', 'home.html'));
     }
@@ -67,6 +70,10 @@ app.post('/save', function(req, res) {
         nodeFs.writeFileSync(path.join(folderName, form.fname), form.content, { encoding: "utf-8" });
     });
     res.status(200);
+})
+
+app.get('/filename', function(req, res) {
+    res.json(fname);
 })
 
 app.get('/currentFolder', function(req, res) {

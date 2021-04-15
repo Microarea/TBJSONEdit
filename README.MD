@@ -32,6 +32,12 @@ tbje
 -- or --
 tbjson-edit
 ```
+open in editing all tbjson in folder
+tbje -e
+```
+open sinfle file to editing
+tbje -f file.tbjson
+```
 The application starts and the default browser is opened.   
 In the first page set a folder containing a group of `.tbjson` files forming a UI. The current folder is prompted as default.
 

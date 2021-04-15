@@ -1,0 +1,30 @@
+<html>
+<link rel="stylesheet" href="./w3.css">
+<title>TBJSON file editor ... loading!</title>
+<div class="w3-container w3-teal">
+    <center>
+        <h2>JSON editor</h2>
+    </center>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+    var home = {};
+    var fname = '';
+    (home => {
+
+        $.get(
+            "/filename", {},
+            function(fn) {
+                fname = fn;
+            }
+        );
+
+        $.get(
+            "/currentFolder", {},
+            function(path) {
+                window.location = "JSONEdit.html?folderName=" + path + "&filename=" + fname;
+            }
+        );
+    })(home);
+</script>
