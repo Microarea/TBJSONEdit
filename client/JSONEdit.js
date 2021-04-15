@@ -80,7 +80,6 @@ var JSONEdit = {
         if (!inItems)
             return;
         inItems.forEach(item => {
-            //console.log('=> item', item);
             if (item.id == ui.obj.id) {
                 $("#uiElementFname")[0].innerHTML = fn;
             }
@@ -452,6 +451,7 @@ var JSONEdit = {
         event.stopPropagation();
         var body = {
             folderName: folderName,
+            fileName: fileName,
             forms: []
         };
         tiles.forEach(tile => {
@@ -497,7 +497,12 @@ var JSONEdit = {
             var firstPos = tile.items.length;
             controlClass.forEach(cc => {
                 var ctrl = _.merge({}, cc);
-                ctrl.id = `IDC_${selectedUIObject.obj.name.toUpperCase()}_CTRL${tile.items.length}`;
+                if (selectedUIObject.obj.name) {
+                    ctrl.id = `IDC_${selectedUIObject.obj.name.toUpperCase()}_CTRL${tile.items.length}`;
+                } else {
+                    ctrl.id = `${selectedUIObject.obj.id}_CTRL${tile.items.length}`;
+                }
+
                 if (ctrl.anchor == "") ctrl.anchor = `IDC_${selectedUIObject.obj.name.toUpperCase()}_CTRL${firstPos}`;
                 tile.items.push(ctrl);
             });

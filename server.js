@@ -61,6 +61,19 @@ app.get('/openFolder', function(req, res) {
 app.post('/save', function(req, res) {
     var folderName = req.body.folderName;
     var forms = req.body.forms;
+    var fname = req.body.fileName;
+
+    // Save signle file selected
+    if (fname) {
+        forms.forEach(form => {
+            if (fname == form.fname) {
+                nodeFs.writeFileSync(path.join(folderName, form.fname), form.content, { encoding: "utf-8" });
+            }
+        });
+        res.status(200);
+        return;
+    }
+
     nodeFs.readdirSync(folderName).filter(fn => fn.endsWith('.tbjson')).forEach(function(entry) {
         if (!forms.find(form => form.fname == entry)) {
             nodeFs.unlinkSync(path.join(folderName, entry));

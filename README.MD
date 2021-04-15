@@ -35,7 +35,7 @@ tbjson-edit
 
 ## Paramiter
 ```
--e [open in editing all tbjson in folder>]
+-e [open in editing all tbjson in folder]
 -f <file.tbjson> [open single file to editing]
 ```
 The application starts and the default browser is opened.   
