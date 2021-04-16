@@ -448,6 +448,7 @@ var JSONEdit = {
     );
 
     JSONEdit.save = function(event) {
+        if (!confirm("Save changes ?")) return;
         event.stopPropagation();
         var body = {
             folderName: folderName,

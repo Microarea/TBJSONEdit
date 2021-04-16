@@ -16,12 +16,23 @@
     </div>
 
     <div class="w3-container">
-        <!--p>Path .:</p -->
+        <p>Path .:</p>
         <p></p>
         <input class="w3-input w3-border w3-light-grey" type="text" name="folderName" id="folderName">
         <p></p>
-        <button class="w3-btn w3-teal" onclick="home.openFolder()">open</button>
+        <button class="w3-btn w3-teal" onclick="home.openFolder()">open folder</button>
+        <button class="w3-btn w3-teal" onclick="home.fileList()">refresh list file</button>
+        <p>File name .:</p>
+        <!-- input class="w3-input w3-border w3-light-grey" type="text" name="fileName" id="fileName" -->
+        <select id="filelist">
+        </select>
+
+        <p></p>
+        <button class="w3-btn w3-teal" onclick="home.openFile()">open single file</button>
+
     </div>
+
+
 </body>
 
 </html>
