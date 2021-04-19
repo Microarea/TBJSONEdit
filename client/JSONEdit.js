@@ -1,5 +1,6 @@
 var JSONEdit = {
     save() {},
+    back() {},
     apply() {},
     addControl() {},
     controlUp() {},
@@ -446,6 +447,11 @@ var JSONEdit = {
             $("#message")[0].innerHTML = error.responseText;
         }
     );
+
+    JSONEdit.back = function(event) {
+        if (!confirm("Return back, any changes will be lost ?")) return;
+        window.location = 'home.html';
+    }
 
     JSONEdit.save = function(event) {
         if (!confirm("Save changes ?")) return;
