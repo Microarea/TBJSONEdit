@@ -302,14 +302,14 @@ var view = {
         if (!jsonElements.items)
             return false;
 
+        var bFound = false;
         jsonElements.items.forEach(jsonElement => {
             if (jsonElement.type == "Toolbar") {
                 view.addToolbar($("#toolbar-content"), jsonElement);
-                return true;
+                bFound = true;
             }
         });
-
-        return false;
+        return bFound;
     }
 
     view.addPanel = function(elem, jsonPanels, extensions) {
