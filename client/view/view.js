@@ -282,26 +282,41 @@ var view = {
         return tg;
     }
 
-    view.addToolbar = function(elem, jsonElements, extensions) {
+    view.addToolbar = function(elem, jsonToolbar, extensions) {
         elem[0].innerHTML = "";
         var lc = "";
-        jsonElements.forEach(jsonToolbar => {
-            if (jsonToolbar.type != "Toolbar")
-                return;
-            lc = $(view.render(toolbarContainerTemplate, { "id": jsonToolbar.id }));
-            jsonToolbar.items.forEach(item => {
-                var bt = $(view.render(toolbarButtonTemplate, { "id": item.id }));
-                lc.append(bt);
-            });
+        lc = $(view.render(toolbarContainerTemplate, { "id": jsonToolbar.id }));
+        jsonToolbar.items.forEach(item => {
+            var bt = $(view.render(toolbarButtonTemplate, { "id": item.id }));
+            lc.append(bt);
         });
         elem.append(lc);
+    }
+
+    function isToolbar(jsonElements) {
+        if (jsonElements.type == "Toolbar") {
+            view.addToolbar($("#toolbar-content"), jsonElements);
+            return true;
+        }
+
+        if (!jsonElements.items)
+            return false;
+
+        jsonElements.items.forEach(jsonElement => {
+            if (jsonElement.type == "Toolbar") {
+                view.addToolbar($("#toolbar-content"), jsonElement);
+                return true;
+            }
+        });
+
+        return false;
     }
 
     view.addPanel = function(elem, jsonPanels, extensions) {
         elem[0].innerHTML = "";
         var lc = $(view.render(layoutContainerTemplate, { "id": "layout-container" }));
         jsonPanels.forEach(jsonPanel => {
-            if (jsonPanel.type && jsonPanel.type == "Toolbar")
+            if (isToolbar(jsonPanel))
                 return;
             var panel = view.createTile(jsonPanel);
             lc.append(panel);
@@ -312,7 +327,7 @@ var view = {
     view.addView = function(elem, jsonView, jsonTiles, extensions) {
         var mainView = $(view.render(viewTemplate, { "id": jsonView.id }));
         jsonView.items.forEach(item => {
-            if (jsonView.type == "Toolbar")
+            if (isToolbar(item))
                 return;
             mainView.append(createTilegroup(item, jsonTiles, extensions));
         });

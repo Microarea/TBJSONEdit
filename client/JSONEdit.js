@@ -357,10 +357,8 @@ var JSONEdit = {
 
     function showView() {
         if (mainView) {
-            view.addToolbar($("#toolbar-content"), tiles);
             view.addView($("#main-content"), mainView, tiles);
         } else {
-            view.addToolbar($("#toolbar-content"), mainPanels);
             view.addPanel($("#main-content"), mainPanels);
         }
 
@@ -403,6 +401,8 @@ var JSONEdit = {
                 return "Toolbar";
             case 15:
                 return "ToolbarButton";
+            case 29:
+                return "MenuItem";
             case 66:
                 return "Panel";
             case 71:
