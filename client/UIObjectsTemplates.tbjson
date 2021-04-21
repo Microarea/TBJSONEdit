@@ -259,6 +259,19 @@ const ControlClassesTemplates = {
   }
 };
   
+const ToolBarTemplates = {
+  "ToolbarButton" : {
+    "type": "ToolbarButton",
+    "default": true,
+    "alignRight": true,
+    "icon": "",
+    "id": "",
+    "name": "text",
+    "text": "text",
+    "hint": "text"
+  }
+}
+
 const BodyEditColumTemplates = {
   "StringEdit" : {
      "type": "ColTitle",

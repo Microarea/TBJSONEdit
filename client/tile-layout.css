@@ -90,6 +90,13 @@ h6 {
 
 .layout-container {}
 
+.toolbar-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 70%!important;
+    overflow: hidden;
+}
+
 .hbox {
     display: flex;
     flex-direction: row;
@@ -188,6 +195,27 @@ h6 {
     min-height: var(--base-height);
     max-width: 100%!important;
     box-sizing: border-box;
+}
+
+.toolbar-control-group {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%!important;
+    overflow: hidden;
+}
+
+.toolbar-control-caption {}
+
+.toolbar-control {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    background-color: skyblue;
+}
+
+.toolbar-control button {
+    height: 100%;
+    width: 100%;
 }
 
 .tile-autofill {

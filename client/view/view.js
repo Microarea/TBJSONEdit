@@ -1,6 +1,7 @@
 var view = {
     addView(elem, jsonView, jsonTiles, extensions) {},
     addPanel(elem, jsonPanels, extensions) {},
+    addToolbar(elem, jsonPanels, extensions) {},
     render(template, props, flat) {},
     createField(item) {},
     createTile(jsonTile) {}
@@ -98,6 +99,10 @@ var view = {
             field.append($(tileControlButtonTemplate));
         } else if (item.type == "Radio") {
             field.append($(tileControlRadioTemplate));
+        } else if (item.type == "ToolbarButton") {
+            field.append($(toolbarButtonTemplate));
+        } else {
+            console.log("Manca.:", item.type);
         }
 
         if (field.children(".tile-control")) {
@@ -277,22 +282,38 @@ var view = {
         return tg;
     }
 
+    view.addToolbar = function(elem, jsonElements, extensions) {
+        elem[0].innerHTML = "";
+        var lc = "";
+        jsonElements.forEach(jsonToolbar => {
+            if (jsonToolbar.type != "Toolbar")
+                return;
+            lc = $(view.render(toolbarContainerTemplate, { "id": jsonToolbar.id }));
+            jsonToolbar.items.forEach(item => {
+                var bt = $(view.render(toolbarButtonTemplate, { "id": item.id }));
+                lc.append(bt);
+            });
+        });
+        elem.append(lc);
+    }
+
     view.addPanel = function(elem, jsonPanels, extensions) {
         elem[0].innerHTML = "";
-        // view fitizzia
-        var lc = $(view.render(layoutContainerTemplate, { "id": "000000" || null }));
-
+        var lc = $(view.render(layoutContainerTemplate, { "id": "layout-container" }));
         jsonPanels.forEach(jsonPanel => {
+            if (jsonPanel.type && jsonPanel.type == "Toolbar")
+                return;
             var panel = view.createTile(jsonPanel);
             lc.append(panel);
         });
-
         elem.append(lc);
     }
 
     view.addView = function(elem, jsonView, jsonTiles, extensions) {
         var mainView = $(view.render(viewTemplate, { "id": jsonView.id }));
         jsonView.items.forEach(item => {
+            if (jsonView.type == "Toolbar")
+                return;
             mainView.append(createTilegroup(item, jsonTiles, extensions));
         });
         elem[0].innerHTML = "";

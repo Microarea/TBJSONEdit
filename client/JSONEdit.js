@@ -44,6 +44,17 @@ var JSONEdit = {
         }
     }
 
+    function addToolBarActions() {
+        $("#uiElementActions")[0].innerHTML = "";
+        $("#uiElementActions").append($("#tile-actions").html());
+        for (let [key] of Object.entries(ToolBarTemplates)) {
+            $('#controlClasses').append($('<option/>', {
+                value: key,
+                text: key
+            }));
+        }
+    }
+
     function addControlActions(bodyEdit = false) {
         $("#uiElementActions")[0].innerHTML = "";
         if (bodyEdit) {
@@ -151,7 +162,7 @@ var JSONEdit = {
     var tiles = [];
     var selectedUIObject = null;
     var mainView = null;
-    var mainPanels = null;
+    var mainPanels = null; // single element panel - toolbar and more
 
     function explodeContainer(item) {
         var node = {};
@@ -234,6 +245,9 @@ var JSONEdit = {
             case "Panel":
                 showPanelProperties();
                 break;
+            case "Toolbar":
+                showToolbarProperties();
+                break;
             case "View":
                 showViewProperties();
                 break;
@@ -285,6 +299,9 @@ var JSONEdit = {
             case "Panel":
                 showPanelProperties();
                 break;
+            case "Toolbar":
+                showToolbarProperties();
+                break;
             case "View":
                 showViewProperties();
                 break;
@@ -323,6 +340,11 @@ var JSONEdit = {
         addTileGroupActions();
     }
 
+    function showToolbarProperties() {
+        showUIObjectProperties($("#uiElementProperties"), selectedUIObject, ["items"]);
+        addToolBarActions();
+    }
+
     function onControlClicked(event) {
         onUIElementSelected(event);
         var ctrlId = $(event.currentTarget)[0].id;
@@ -335,8 +357,10 @@ var JSONEdit = {
 
     function showView() {
         if (mainView) {
+            view.addToolbar($("#toolbar-content"), tiles);
             view.addView($("#main-content"), mainView, tiles);
         } else {
+            view.addToolbar($("#toolbar-content"), mainPanels);
             view.addPanel($("#main-content"), mainPanels);
         }
 
@@ -345,6 +369,10 @@ var JSONEdit = {
         $(".main-view").click(onUIElementClicked);
         $(".tile").click(onUIElementClicked);
         $(".tile-control-group").click(onControlClicked);
+
+        // Toolbar events
+        $(".toolbar-container").click(onUIElementClicked);
+        $(".toolbar-control").click(onControlClicked);
 
         if (selectedUIObject) {
             $(`#${selectedUIObject.obj.id}`).addClass("selected-ui-element");
@@ -371,6 +399,10 @@ var JSONEdit = {
                 return "Combo";
             case 13:
                 return "Edit";
+            case 14:
+                return "Toolbar";
+            case 15:
+                return "ToolbarButton";
             case 66:
                 return "Panel";
             case 71:
@@ -494,10 +526,29 @@ var JSONEdit = {
     JSONEdit.addControl = function(event) {
         event.stopPropagation();
         var controlClass = ControlClassesTemplates[$('#controlClasses').val()];
-        if (!controlClass || !selectedUIObject) return;
+
+        if (!selectedUIObject) return;
+
+        // Toolbar
+        if (selectedUIObject.type == "Toolbar") {
+            var toolbarClass = ToolBarTemplates[$('#controlClasses').val()];
+            if (!toolbarClass)
+                return;
+            if (!Array.isArray(toolbarClass))
+                toolbarClass = [toolbarClass];
+            var toolbar = selectedUIObject.obj;
+            var firstPos = toolbar.items.length;
+            toolbarClass.forEach(cc => {
+                var ctrl = _.merge({}, cc);
+                ctrl.id = `${selectedUIObject.obj.id}_CTRL${toolbar.items.length}`;
+                toolbar.items.push(ctrl);
+            });
+
+            selectedUIObject = { type: "Control", obj: toolbar.items[firstPos] };
+        }
 
         // Tile
-        if (selectedUIObject.type == "Tile") {
+        if (controlClass && selectedUIObject.type == "Tile") {
             var tile = selectedUIObject.obj;
             if (!Array.isArray(controlClass))
                 controlClass = [controlClass];
@@ -515,8 +566,9 @@ var JSONEdit = {
             });
             selectedUIObject = { type: "Control", obj: tile.items[firstPos] };
         }
+
         // Panel
-        if (selectedUIObject.type == "Panel") {
+        if (controlClass && selectedUIObject.type == "Panel") {
             var panel = selectedUIObject.obj;
             if (!Array.isArray(controlClass))
                 controlClass = [controlClass];
@@ -531,7 +583,6 @@ var JSONEdit = {
         }
 
         showView();
-
         showControlProperties(selectedUIObject.obj.controlClass == 'BodyEdit');
     }
 
