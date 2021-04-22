@@ -8,6 +8,7 @@ var JSONEdit = {
     removeTile() {},
     removeControl() {},
     bodyeditAddColum() {},
+    toolbarAction() {},
     containerUp() {},
     containerDown() {},
     removeContainer() {},
@@ -55,7 +56,7 @@ var JSONEdit = {
         }
     }
 
-    function addControlActions(bodyEdit = false) {
+    function addControlActions(bodyEdit = false, toolBar = false) {
         $("#uiElementActions")[0].innerHTML = "";
         if (bodyEdit) {
             $("#uiElementActions").append($("#bodyedit-actions").html());
@@ -65,7 +66,17 @@ var JSONEdit = {
                     text: key
                 }));
             }
+        } else if (toolBar) {
+            $("#uiElementActions").append($("#toolbar-actions").html());
+            for (let [key] of Object.entries(ToolBarButtonTemplates)) {
+                console.log(key);
+                $('#toolbarControlClasses').append($('<option/>', {
+                    value: key,
+                    text: key
+                }));
+            }
         }
+
         $("#uiElementActions").append($("#control-actions").html());
     }
 
@@ -151,9 +162,9 @@ var JSONEdit = {
         }
     }
 
-    function showControlProperties(bodyEdit = false) {
+    function showControlProperties(bodyEdit = false, toolBar = false) {
         showUIObjectProperties($("#uiElementProperties"), selectedUIObject, ["auxKeys"], ["type", "controlClass"], ["text", "controlCaption", "id", "type", "comboType", "controlClass", "placeholder", "controlSize", "captionSize", "height", "anchor"]);
-        addControlActions(bodyEdit);
+        addControlActions(bodyEdit, toolBar);
     }
 
     var urlParams = new URLSearchParams(window.location.search);
@@ -352,7 +363,7 @@ var JSONEdit = {
             return c.id && c.id == ctrlId
         });
         selectedUIObject = { type: "Control", obj: ctrl };
-        showControlProperties(ctrl.controlClass == 'BodyEdit');
+        showControlProperties(ctrl.controlClass == 'BodyEdit', ctrl.type == 'ToolbarButton');
     }
 
     function showView() {
@@ -583,7 +594,7 @@ var JSONEdit = {
         }
 
         showView();
-        showControlProperties(selectedUIObject.obj.controlClass == 'BodyEdit');
+        showControlProperties(selectedUIObject.obj.controlClass == 'BodyEdit', selectedUIObject.obj.type == 'ToolbarButton');
     }
 
     JSONEdit.removeControl = function(event) {
@@ -609,12 +620,20 @@ var JSONEdit = {
         event.stopPropagation();
         if (!selectedUIObject || selectedUIObject.type != "Control") return;
         var BEcontrolClass = BodyEditColumTemplates[$('#bodyEditColumControlClasses').val()];
-
         selectedUIObject.obj.items.push(BEcontrolClass);
-
         showView();
-
         showControlProperties(true);
+    }
+
+    JSONEdit.toolbarAction = function(event) {
+        event.stopPropagation();
+        if (!selectedUIObject || selectedUIObject.type != "Control") return;
+        var toolbarButtonClass = ToolBarButtonTemplates[$('#toolbarControlClasses').val()];
+        if (!selectedUIObject.obj.items)
+            selectedUIObject.obj.items = [];
+        selectedUIObject.obj.items.push(toolbarButtonClass);
+        showView();
+        showControlProperties(false, true);
     }
 
     function controlMove(displacement) {

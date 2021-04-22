@@ -248,6 +248,14 @@
         <button class="ml-1" onclick="JSONEdit.bodyeditAddColum(event)">+</button>
     </div>
 </script>
+<script id="toolbar-actions" type="text/template">
+    <div class="property-row">
+        <div class="ml-1">Add colum</div>
+        <select id="toolbarControlClasses">
+        </select>
+        <button class="ml-1" onclick="JSONEdit.toolbarAction(event)">+</button>
+    </div>
+</script>
 <script id="property-template" type="text/template">
     <div class="property-row">
         <div class="property-name">{name}</div>

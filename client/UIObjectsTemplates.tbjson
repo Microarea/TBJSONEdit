@@ -264,13 +264,16 @@ const ToolBarTemplates = {
     "type": "ToolbarButton",
     "default": true,
     "alignRight": true,
+    "isDropdown": false,
     "icon": "",
     "id": "",
     "name": "text",
     "text": "text",
     "hint": "text"
-  },
+  }
+}
 
+const ToolBarButtonTemplates = {
   "MenuItem": {
     "type": "MenuItem",
     "default": true,
@@ -281,8 +284,8 @@ const ToolBarTemplates = {
     "text": "text",
     "hint": "text"
   }
-
 }
+
 
 const BodyEditColumTemplates = {
   "StringEdit" : {
