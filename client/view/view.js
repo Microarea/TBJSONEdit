@@ -287,8 +287,10 @@ var view = {
         var lc = "";
         lc = $(view.render(toolbarContainerTemplate, { "id": jsonToolbar.id }));
         jsonToolbar.items.forEach(item => {
-            var bt = $(view.render(toolbarButtonTemplate, { "id": item.id }));
-            lc.append(bt);
+            if (item.type == "ToolbarButton") {
+                var bt = $(view.render(toolbarButtonTemplate, { "id": item.id }));
+                lc.append(bt);
+            }
         });
         elem.append(lc);
     }

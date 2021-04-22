@@ -126,6 +126,7 @@ h6 {
     margin-right: var(--spacing);
     margin-bottom: var(--spacing);
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 .tile-title {
