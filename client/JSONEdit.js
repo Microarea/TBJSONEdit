@@ -69,7 +69,6 @@ var JSONEdit = {
         } else if (toolBar) {
             $("#uiElementActions").append($("#toolbar-actions").html());
             for (let [key] of Object.entries(ToolBarButtonTemplates)) {
-                console.log(key);
                 $('#toolbarControlClasses').append($('<option/>', {
                     value: key,
                     text: key
