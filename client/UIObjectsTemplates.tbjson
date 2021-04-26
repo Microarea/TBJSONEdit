@@ -270,7 +270,32 @@ const ToolBarTemplates = {
     "name": "text",
     "text": "text",
     "hint": "text"
+  },
+
+  "ToolbarButtonMenu" : {
+    "type": "ToolbarButton",
+    "default": true,
+    "alignRight": true,
+    "isDropdown": true,
+    "items": [
+      {
+        "type": "MenuItem",
+        "default": true,
+        "alignRight": true,
+        "icon": "",
+        "id": "",
+        "name": "text",
+        "text": "text",
+        "hint": "text"
+      }
+    ],
+    "icon": "",
+    "id": "",
+    "name": "text",
+    "text": "text",
+    "hint": "text"
   }
+
 }
 
 const ToolBarButtonTemplates = {
